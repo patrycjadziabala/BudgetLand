@@ -13,6 +13,8 @@
 		4616486C2A4AF31400B24D88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4616486B2A4AF31400B24D88 /* Preview Assets.xcassets */; };
 		4616486E2A4AF31400B24D88 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4616486D2A4AF31400B24D88 /* Persistence.swift */; };
 		461648712A4AF31400B24D88 /* BudgetLand.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4616486F2A4AF31400B24D88 /* BudgetLand.xcdatamodeld */; };
+		461648782A4AF3C700B24D88 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461648772A4AF3C700B24D88 /* WelcomeView.swift */; };
+		4616487A2A4B16CA00B24D88 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461648792A4B16CA00B24D88 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		4616486B2A4AF31400B24D88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4616486D2A4AF31400B24D88 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		461648702A4AF31400B24D88 /* BudgetLand.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BudgetLand.xcdatamodel; sourceTree = "<group>"; };
+		461648772A4AF3C700B24D88 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		461648792A4B16CA00B24D88 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 		461648632A4AF31300B24D88 /* BudgetLand */ = {
 			isa = PBXGroup;
 			children = (
+				4616487B2A4B16D500B24D88 /* Utilities */,
 				461648642A4AF31300B24D88 /* BudgetLandApp.swift */,
 				461648662A4AF31300B24D88 /* ContentView.swift */,
+				461648772A4AF3C700B24D88 /* WelcomeView.swift */,
 				461648682A4AF31400B24D88 /* Assets.xcassets */,
 				4616486D2A4AF31400B24D88 /* Persistence.swift */,
 				4616486F2A4AF31400B24D88 /* BudgetLand.xcdatamodeld */,
@@ -71,6 +77,14 @@
 				4616486B2A4AF31400B24D88 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4616487B2A4B16D500B24D88 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				461648792A4B16CA00B24D88 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461648782A4AF3C700B24D88 /* WelcomeView.swift in Sources */,
 				4616486E2A4AF31400B24D88 /* Persistence.swift in Sources */,
 				461648712A4AF31400B24D88 /* BudgetLand.xcdatamodeld in Sources */,
 				461648672A4AF31300B24D88 /* ContentView.swift in Sources */,
 				461648652A4AF31300B24D88 /* BudgetLandApp.swift in Sources */,
+				4616487A2A4B16CA00B24D88 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
