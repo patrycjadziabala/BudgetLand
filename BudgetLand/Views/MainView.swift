@@ -9,7 +9,21 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color(Constants.customBlue)
+            VStack {
+                Text("Dashboard")
+                    .font(.custom(Constants.fontExtraBold, size: 40))
+                Text("1,500.00")
+                    .font(.custom(Constants.fontMedium, size: 30))
+                    .foregroundColor(.white)
+                    .shadow(radius: 4)
+                Text("Total spent this month so far")
+                
+                CategoriesCardView()
+            } //v stack
+        } // z stack
+        .background(Color(Constants.customPink))
     }
 }
 
