@@ -28,4 +28,13 @@ struct Constants {
     static let budgetLand = "BudgetLand"
     static let trackYourExpenses = "Track your expenses"
     static let enter = "Enter"
+    
+    //MARK: - Fonts
+    static let fontLight = "YsabeauInfant-Light"
+    static let fontMedium = "YsabeauInfant-Medium"
+    static let fontRegular = "YsabeauInfant-Regular"
+    static let fontExtraLight = "YsabeauInfant-ExtraLight"
+    static let fontExtraBold = "YsabeauInfant-ExtraBold"
+    static let fontBold = "YsabeauInfant-Bold"
+    static let fontBlack = "YsabeauInfant-Black"
 }

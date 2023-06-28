@@ -17,6 +17,15 @@
 		4616487A2A4B16CA00B24D88 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461648792A4B16CA00B24D88 /* Constants.swift */; };
 		4616487E2A4B18E300B24D88 /* EnterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4616487D2A4B18E300B24D88 /* EnterButton.swift */; };
 		461648802A4B78F300B24D88 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4616487F2A4B78F300B24D88 /* MainView.swift */; };
+		461648842A4B7AE400B24D88 /* CategoriesCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461648832A4B7AE400B24D88 /* CategoriesCardView.swift */; };
+		461648862A4C65D700B24D88 /* CategoryTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461648852A4C65D700B24D88 /* CategoryTitleView.swift */; };
+		461648892A4C6A3C00B24D88 /* YsabeauInfant-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 461648882A4C6A3C00B24D88 /* YsabeauInfant-Black.ttf */; };
+		4616488B2A4C6A4500B24D88 /* YsabeauInfant-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4616488A2A4C6A4500B24D88 /* YsabeauInfant-Bold.ttf */; };
+		4616488D2A4C6A4E00B24D88 /* YsabeauInfant-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4616488C2A4C6A4E00B24D88 /* YsabeauInfant-ExtraBold.ttf */; };
+		4616488F2A4C6A7E00B24D88 /* YsabeauInfant-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4616488E2A4C6A7E00B24D88 /* YsabeauInfant-ExtraLight.ttf */; };
+		461648912A4C6A8900B24D88 /* YsabeauInfant-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 461648902A4C6A8900B24D88 /* YsabeauInfant-Light.ttf */; };
+		461648932A4C6A8F00B24D88 /* YsabeauInfant-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 461648922A4C6A8F00B24D88 /* YsabeauInfant-Medium.ttf */; };
+		461648952A4C6A9500B24D88 /* YsabeauInfant-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 461648942A4C6A9500B24D88 /* YsabeauInfant-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +40,16 @@
 		461648792A4B16CA00B24D88 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4616487D2A4B18E300B24D88 /* EnterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterButton.swift; sourceTree = "<group>"; };
 		4616487F2A4B78F300B24D88 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		461648832A4B7AE400B24D88 /* CategoriesCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCardView.swift; sourceTree = "<group>"; };
+		461648852A4C65D700B24D88 /* CategoryTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTitleView.swift; sourceTree = "<group>"; };
+		461648882A4C6A3C00B24D88 /* YsabeauInfant-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "YsabeauInfant-Black.ttf"; path = "Ysabeau_Infant/static/YsabeauInfant-Black.ttf"; sourceTree = SOURCE_ROOT; };
+		4616488A2A4C6A4500B24D88 /* YsabeauInfant-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "YsabeauInfant-Bold.ttf"; path = "Ysabeau_Infant/static/YsabeauInfant-Bold.ttf"; sourceTree = SOURCE_ROOT; };
+		4616488C2A4C6A4E00B24D88 /* YsabeauInfant-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "YsabeauInfant-ExtraBold.ttf"; path = "Ysabeau_Infant/static/YsabeauInfant-ExtraBold.ttf"; sourceTree = SOURCE_ROOT; };
+		4616488E2A4C6A7E00B24D88 /* YsabeauInfant-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "YsabeauInfant-ExtraLight.ttf"; path = "Ysabeau_Infant/static/YsabeauInfant-ExtraLight.ttf"; sourceTree = SOURCE_ROOT; };
+		461648902A4C6A8900B24D88 /* YsabeauInfant-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "YsabeauInfant-Light.ttf"; path = "Ysabeau_Infant/static/YsabeauInfant-Light.ttf"; sourceTree = SOURCE_ROOT; };
+		461648922A4C6A8F00B24D88 /* YsabeauInfant-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "YsabeauInfant-Medium.ttf"; path = "Ysabeau_Infant/static/YsabeauInfant-Medium.ttf"; sourceTree = SOURCE_ROOT; };
+		461648942A4C6A9500B24D88 /* YsabeauInfant-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "YsabeauInfant-Regular.ttf"; path = "Ysabeau_Infant/static/YsabeauInfant-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		461648962A4C6C5F00B24D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +82,8 @@
 		461648632A4AF31300B24D88 /* BudgetLand */ = {
 			isa = PBXGroup;
 			children = (
+				461648962A4C6C5F00B24D88 /* Info.plist */,
+				461648872A4C6A3100B24D88 /* Fonts */,
 				4616487B2A4B16D500B24D88 /* Utilities */,
 				461648642A4AF31300B24D88 /* BudgetLandApp.swift */,
 				461648662A4AF31300B24D88 /* ContentView.swift */,
@@ -97,8 +118,24 @@
 				461648772A4AF3C700B24D88 /* WelcomeView.swift */,
 				4616487D2A4B18E300B24D88 /* EnterButton.swift */,
 				4616487F2A4B78F300B24D88 /* MainView.swift */,
+				461648832A4B7AE400B24D88 /* CategoriesCardView.swift */,
+				461648852A4C65D700B24D88 /* CategoryTitleView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		461648872A4C6A3100B24D88 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				461648902A4C6A8900B24D88 /* YsabeauInfant-Light.ttf */,
+				461648922A4C6A8F00B24D88 /* YsabeauInfant-Medium.ttf */,
+				461648942A4C6A9500B24D88 /* YsabeauInfant-Regular.ttf */,
+				4616488E2A4C6A7E00B24D88 /* YsabeauInfant-ExtraLight.ttf */,
+				4616488C2A4C6A4E00B24D88 /* YsabeauInfant-ExtraBold.ttf */,
+				4616488A2A4C6A4500B24D88 /* YsabeauInfant-Bold.ttf */,
+				461648882A4C6A3C00B24D88 /* YsabeauInfant-Black.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +196,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461648892A4C6A3C00B24D88 /* YsabeauInfant-Black.ttf in Resources */,
+				461648912A4C6A8900B24D88 /* YsabeauInfant-Light.ttf in Resources */,
+				4616488F2A4C6A7E00B24D88 /* YsabeauInfant-ExtraLight.ttf in Resources */,
 				4616486C2A4AF31400B24D88 /* Preview Assets.xcassets in Resources */,
+				461648932A4C6A8F00B24D88 /* YsabeauInfant-Medium.ttf in Resources */,
+				4616488B2A4C6A4500B24D88 /* YsabeauInfant-Bold.ttf in Resources */,
+				4616488D2A4C6A4E00B24D88 /* YsabeauInfant-ExtraBold.ttf in Resources */,
 				461648692A4AF31400B24D88 /* Assets.xcassets in Resources */,
+				461648952A4C6A9500B24D88 /* YsabeauInfant-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,8 +216,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				461648782A4AF3C700B24D88 /* WelcomeView.swift in Sources */,
+				461648862A4C65D700B24D88 /* CategoryTitleView.swift in Sources */,
 				461648802A4B78F300B24D88 /* MainView.swift in Sources */,
 				4616486E2A4AF31400B24D88 /* Persistence.swift in Sources */,
+				461648842A4B7AE400B24D88 /* CategoriesCardView.swift in Sources */,
 				461648712A4AF31400B24D88 /* BudgetLand.xcdatamodeld in Sources */,
 				461648672A4AF31300B24D88 /* ContentView.swift in Sources */,
 				461648652A4AF31300B24D88 /* BudgetLandApp.swift in Sources */,
@@ -310,6 +356,7 @@
 				DEVELOPMENT_TEAM = 22NX7WBF6A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BudgetLand/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +386,7 @@
 				DEVELOPMENT_TEAM = 22NX7WBF6A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BudgetLand/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

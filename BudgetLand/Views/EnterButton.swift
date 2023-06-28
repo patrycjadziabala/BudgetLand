@@ -21,7 +21,7 @@ struct EnterButton: View {
                 .padding([.leading, .trailing])
                 .background(
                     Capsule()
-                        .strokeBorder(lineWidth: 1)
+                        .strokeBorder(lineWidth: 2)
                         .foregroundColor(.white)
                         .shadow(radius: 2)
                 )
