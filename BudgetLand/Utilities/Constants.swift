@@ -14,6 +14,7 @@ struct Constants {
     static let photoCircleFill = "photo.circle.fill"
     static let coinImage = "digitalcrown.arrow.counterclockwise"
     static let categoryBackgroundColor = "Category background"
+    static let mainHeaderBackground = "MainHeaderBackground"
     
     // MARK: - Colors
     static let customBlue = "CustomBlue"

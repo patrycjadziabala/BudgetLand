@@ -9,7 +9,28 @@ import SwiftUI
 
 struct HeaderForMainView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Image(Constants.mainHeaderBackground)
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+            VStack (spacing: 45) {
+                Text("Dashboard")
+                    .font(.custom(Constants.fontExtraBold, size: 40))
+                    .frame(alignment: .center)
+                    .offset(y: 90)
+                Text("1,500.00")
+                    .font(.custom(Constants.fontMedium, size: 30))
+                    .foregroundColor(.white)
+                    .shadow(radius: 4)
+                    .offset(y: 70)
+                Text("Total spent this month so far")
+                    .offset(y: 30)
+                Spacer()
+            }
+        } //zstack
+        .frame(height: 350)
+        .edgesIgnoringSafeArea(.top)
     }
 }
 
