@@ -15,7 +15,7 @@ struct HeaderForMainView: View {
                 .scaledToFill()
                 .ignoresSafeArea()
             VStack (spacing: 45) {
-                Text("Dashboard")
+                Text(Constants.dashboard)
                     .font(.custom(Constants.fontExtraBold, size: 40))
                     .frame(alignment: .center)
                     .offset(y: 90)

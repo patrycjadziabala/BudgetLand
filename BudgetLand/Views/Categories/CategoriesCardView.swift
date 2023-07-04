@@ -9,31 +9,26 @@ import SwiftUI
 
 struct CategoriesCardView: View {
     @State private var categoryPresented: Category?
-    
+   
     var body: some View {
         VStack {
             TabView {
                 ForEach(customCategories, id: \.id) {
                     category in
-                    ZStack {
-                        Image(Constants.categoryBackgroundColor)
-                            .resizable()
-                            .scaledToFit()
-                            .shadow(radius: 15)
-                            .frame(height: 350)
-                            .opacity(0.3)
+                    VStack {
                         VStack (alignment: .center, spacing: 10) {
-                            HStack {
-                                CategoryTitleView(categoryTitle: category.title, color: .white)
+                            let titleBackgroundColor = colors.randomElement()
+                                CategoryTitleView(categoryTitle: category.title, categoryColor: titleBackgroundColor ?? Constants.customBlue, categoryIcon: "cart")
                                     .shadow(radius: 4)
-                                Image(systemName: category.icon)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(height: 30)
-                                    .shadow(radius: 5)
-                            } //hstack
+                                    .frame(alignment: .top)
+                            Image(Constants.categoryBackgroundColor)
+                                .resizable()
+                                .scaledToFit()
+                                .shadow(radius: 15)
+                                .opacity(0.3)
                         } //vstack
                     } //zstack
+                    .frame(height: 350)
                     .cornerRadius(15)
                     .onTapGesture {
                         categoryPresented = category
@@ -44,8 +39,8 @@ struct CategoriesCardView: View {
                 }
             } // tab view
             .tabViewStyle(.page)
+            .frame(width: 350, height: 300)
         } //vstack
-        .frame(height: 350)
     }
 }
 

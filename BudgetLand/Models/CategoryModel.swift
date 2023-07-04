@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Category: Identifiable {
     var id = UUID()
     var title: String
     var icon: String
 }
+
