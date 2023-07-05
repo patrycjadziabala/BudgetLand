@@ -15,6 +15,7 @@ struct Constants {
     static let coinImage = "digitalcrown.arrow.counterclockwise"
     static let categoryBackgroundColor = "Category background"
     static let mainHeaderBackground = "MainHeaderBackground"
+    static let bellBadge = "bell.badge"
     
     // MARK: - Colors
     static let customBlue = "CustomBlue"
@@ -25,12 +26,14 @@ struct Constants {
     static let customPink = "CustomPink"
     static let customPurple = "CustomPurple"
     static let customYellow = "CustomYellow"
+    static let fontColorOverview = "FontColorOverview"
     
     // MARK: - Titles
     static let budgetLand = "BudgetLand"
     static let trackYourExpenses = "Track your expenses"
     static let enter = "Enter"
     static let dashboard = "Dashboard"
+    static let overview = "Overview"
     
     //MARK: - Fonts
     static let fontLight = "YsabeauInfant-Light"

@@ -17,11 +17,9 @@ struct MainView: View {
                     CategoriesCardView()
                 } //v stack
             } // z stack
-      
         } // scroll view
         .ignoresSafeArea()
         .background(Color(Constants.customBlue))
-        
     }
 }
 
