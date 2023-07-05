@@ -15,20 +15,14 @@ struct CategoriesCardView: View {
             TabView {
                 ForEach(customCategories, id: \.id) {
                     category in
-                    VStack {
-                        VStack (alignment: .center, spacing: 10) {
-                            let titleBackgroundColor = colors.randomElement()
-                                CategoryTitleView(categoryTitle: category.title, categoryColor: titleBackgroundColor ?? Constants.customBlue, categoryIcon: "cart")
+                        VStack (alignment: .center, spacing: 5) {
+                            let titleBackgroundColor = colors.randomElement() ?? Constants.customBlue
+                                CategoryTitleView(categoryTitle: category.title, categoryColor: titleBackgroundColor, categoryIcon: "cart")
                                     .shadow(radius: 4)
-                                    .frame(alignment: .top)
-                            Image(Constants.categoryBackgroundColor)
-                                .resizable()
-                                .scaledToFit()
-                                .shadow(radius: 15)
-                                .opacity(0.3)
+                          Rectangle()
+                                .foregroundColor(Color(titleBackgroundColor))
+                                .opacity(0.4)
                         } //vstack
-                    } //zstack
-                    .frame(height: 350)
                     .cornerRadius(15)
                     .onTapGesture {
                         categoryPresented = category

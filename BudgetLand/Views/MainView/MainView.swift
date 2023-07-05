@@ -14,8 +14,8 @@ struct MainView: View {
                 Color(Constants.customBlue)
                 VStack (spacing: 40) {
                     HeaderForMainView()
-                        .padding()
-                        .frame(height: 350)
+//                        .padding()
+//                        .frame(height: 350)
                     CategoriesCardView()
                 } //v stack
             } // z stack
