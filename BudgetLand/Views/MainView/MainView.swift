@@ -11,18 +11,17 @@ struct MainView: View {
     var body: some View {
         ScrollView {
             ZStack {
-                Color(Constants.customBlue)
+             
                 VStack (spacing: 40) {
                     HeaderForMainView()
-//                        .padding()
-//                        .frame(height: 350)
                     CategoriesCardView()
                 } //v stack
             } // z stack
-            .background(Color(Constants.customPink))
-            
+      
         } // scroll view
         .ignoresSafeArea()
+        .background(Color(Constants.customBlue))
+        
     }
 }
 

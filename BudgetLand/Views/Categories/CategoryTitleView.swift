@@ -15,7 +15,7 @@ struct CategoryTitleView: View {
         
         ZStack {
             Color(categoryColor)
-                .opacity(0.6)
+                .opacity(0.4)
             HStack {
                 ZStack {
                     Circle()

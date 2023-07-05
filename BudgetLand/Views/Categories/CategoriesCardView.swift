@@ -21,7 +21,7 @@ struct CategoriesCardView: View {
                                     .shadow(radius: 4)
                           Rectangle()
                                 .foregroundColor(Color(titleBackgroundColor))
-                                .opacity(0.4)
+                                .opacity(0.5)
                         } //vstack
                     .cornerRadius(15)
                     .onTapGesture {
@@ -33,7 +33,8 @@ struct CategoriesCardView: View {
                 }
             } // tab view
             .tabViewStyle(.page)
-            .frame(width: 350, height: 300)
+            .frame(height: 300)
+            .padding()
         } //vstack
     }
 }
