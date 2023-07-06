@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FASwiftUI
 
 struct ExpenseRow: View {
     var expense: ExpenseModel
@@ -15,6 +16,9 @@ struct ExpenseRow: View {
             RoundedRectangle(cornerRadius: 20, style: .continuous)
                 .fill(Color.cyan.opacity(0.6))
                 .frame(width: 40, height: 40)
+                .overlay {
+                    FAText(iconName: "cart-shopping", size: 25)
+                }
             VStack(alignment: .leading, spacing: 6) {
                 Text(expense.merchant)
                     .font(.custom(Constants.fontBold, size: 15))

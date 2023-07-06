@@ -35,6 +35,11 @@
 		46DA85EC2A55C06F003E2F13 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA85EB2A55C06F003E2F13 /* PreviewData.swift */; };
 		46DA85F02A55C329003E2F13 /* ExpenseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA85EF2A55C329003E2F13 /* ExpenseRow.swift */; };
 		46DA85F22A55C650003E2F13 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA85F12A55C650003E2F13 /* Extensions.swift */; };
+		46DA85F52A56BC94003E2F13 /* FASwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 46DA85F42A56BC94003E2F13 /* FASwiftUI */; };
+		46DA85F72A5700FE003E2F13 /* icons.json in Resources */ = {isa = PBXBuildFile; fileRef = 46DA85F62A5700FD003E2F13 /* icons.json */; };
+		46DA85F92A57010E003E2F13 /* Font Awesome 6 Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46DA85F82A57010E003E2F13 /* Font Awesome 6 Free-Solid-900.otf */; };
+		46DA85FB2A570C48003E2F13 /* ExpenseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA85FA2A570C48003E2F13 /* ExpenseListViewModel.swift */; };
+		46DA85FD2A5726AE003E2F13 /* RecentExpenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA85FC2A5726AE003E2F13 /* RecentExpenses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +73,10 @@
 		46DA85EB2A55C06F003E2F13 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		46DA85EF2A55C329003E2F13 /* ExpenseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseRow.swift; sourceTree = "<group>"; };
 		46DA85F12A55C650003E2F13 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		46DA85F62A5700FD003E2F13 /* icons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icons.json; sourceTree = "<group>"; };
+		46DA85F82A57010E003E2F13 /* Font Awesome 6 Free-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 6 Free-Solid-900.otf"; sourceTree = "<group>"; };
+		46DA85FA2A570C48003E2F13 /* ExpenseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseListViewModel.swift; sourceTree = "<group>"; };
+		46DA85FC2A5726AE003E2F13 /* RecentExpenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentExpenses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46DA85F52A56BC94003E2F13 /* FASwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +152,8 @@
 				46846D302A5427E00025D5A0 /* Categories */,
 				46D9106D2A55B3ED0072D528 /* Overview.swift */,
 				46DA85EF2A55C329003E2F13 /* ExpenseRow.swift */,
+				46DA85FA2A570C48003E2F13 /* ExpenseListViewModel.swift */,
+				46DA85FC2A5726AE003E2F13 /* RecentExpenses.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,7 +164,9 @@
 				461648902A4C6A8900B24D88 /* YsabeauInfant-Light.ttf */,
 				461648922A4C6A8F00B24D88 /* YsabeauInfant-Medium.ttf */,
 				461648942A4C6A9500B24D88 /* YsabeauInfant-Regular.ttf */,
+				46DA85F62A5700FD003E2F13 /* icons.json */,
 				4616488E2A4C6A7E00B24D88 /* YsabeauInfant-ExtraLight.ttf */,
+				46DA85F82A57010E003E2F13 /* Font Awesome 6 Free-Solid-900.otf */,
 				4616488C2A4C6A4E00B24D88 /* YsabeauInfant-ExtraBold.ttf */,
 				4616488A2A4C6A4500B24D88 /* YsabeauInfant-Bold.ttf */,
 				461648882A4C6A3C00B24D88 /* YsabeauInfant-Black.ttf */,
@@ -221,6 +235,9 @@
 			dependencies = (
 			);
 			name = BudgetLand;
+			packageProductDependencies = (
+				46DA85F42A56BC94003E2F13 /* FASwiftUI */,
+			);
 			productName = BudgetLand;
 			productReference = 461648612A4AF31300B24D88 /* BudgetLand.app */;
 			productType = "com.apple.product-type.application";
@@ -249,6 +266,9 @@
 				Base,
 			);
 			mainGroup = 461648582A4AF31300B24D88;
+			packageReferences = (
+				46DA85F32A56BC94003E2F13 /* XCRemoteSwiftPackageReference "FASwiftUI" */,
+			);
 			productRefGroup = 461648622A4AF31300B24D88 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,11 +287,13 @@
 				461648912A4C6A8900B24D88 /* YsabeauInfant-Light.ttf in Resources */,
 				4616488F2A4C6A7E00B24D88 /* YsabeauInfant-ExtraLight.ttf in Resources */,
 				4616486C2A4AF31400B24D88 /* Preview Assets.xcassets in Resources */,
+				46DA85F72A5700FE003E2F13 /* icons.json in Resources */,
 				461648932A4C6A8F00B24D88 /* YsabeauInfant-Medium.ttf in Resources */,
 				4616488B2A4C6A4500B24D88 /* YsabeauInfant-Bold.ttf in Resources */,
 				4616488D2A4C6A4E00B24D88 /* YsabeauInfant-ExtraBold.ttf in Resources */,
 				461648692A4AF31400B24D88 /* Assets.xcassets in Resources */,
 				461648952A4C6A9500B24D88 /* YsabeauInfant-Regular.ttf in Resources */,
+				46DA85F92A57010E003E2F13 /* Font Awesome 6 Free-Solid-900.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,9 +306,11 @@
 			files = (
 				46D9106E2A55B3ED0072D528 /* Overview.swift in Sources */,
 				461648782A4AF3C700B24D88 /* WelcomeView.swift in Sources */,
+				46DA85FD2A5726AE003E2F13 /* RecentExpenses.swift in Sources */,
 				46DA85EC2A55C06F003E2F13 /* PreviewData.swift in Sources */,
 				4616489C2A4C756600B24D88 /* CategoryData.swift in Sources */,
 				461648A02A4C882000B24D88 /* HeaderForMainView.swift in Sources */,
+				46DA85FB2A570C48003E2F13 /* ExpenseListViewModel.swift in Sources */,
 				461648862A4C65D700B24D88 /* CategoryTitleView.swift in Sources */,
 				461648802A4B78F300B24D88 /* MainView.swift in Sources */,
 				46DA85F22A55C650003E2F13 /* Extensions.swift in Sources */,
@@ -503,6 +527,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		46DA85F32A56BC94003E2F13 /* XCRemoteSwiftPackageReference "FASwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mattmaddux/FASwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		46DA85F42A56BC94003E2F13 /* FASwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46DA85F32A56BC94003E2F13 /* XCRemoteSwiftPackageReference "FASwiftUI" */;
+			productName = FASwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4616486F2A4AF31400B24D88 /* BudgetLand.xcdatamodeld */ = {

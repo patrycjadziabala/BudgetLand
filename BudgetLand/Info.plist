@@ -5,6 +5,8 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>YsabeauInfant-ExtraBold.ttf</string>
+		<string>Font Awesome 6 Free-Solid-900.otf</string>
+		<string></string>
 		<string>YsabeauInfant-Medium.ttf</string>
 		<string>YsabeauInfant-Black.ttf</string>
 		<string>YsabeauInfant-Bold.ttf</string>

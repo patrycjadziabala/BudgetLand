@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ExpenseModel: Identifiable {
+struct ExpenseModel: Identifiable, Decodable, Hashable {
     let id: Int
     let date: String
     let institution: String

@@ -9,14 +9,12 @@ import SwiftUI
 
 @main
 struct BudgetLandApp: App {
-    //    let persistenceController = PersistenceController.shared
+   @StateObject var expensesListVM = ExpenseListViewModel()
     
     var body: some Scene {
         WindowGroup {
             WelcomeView()
-            //            ContentView()
-            //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
-            //        }
+                .environmentObject(expensesListVM)
         }
     }
 }
