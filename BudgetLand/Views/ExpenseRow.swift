@@ -17,7 +17,7 @@ struct ExpenseRow: View {
                 .fill(Color.cyan.opacity(0.6))
                 .frame(width: 40, height: 40)
                 .overlay {
-                    FAText(iconName: "cart-shopping", size: 25)
+                    expense.icon
                 }
             VStack(alignment: .leading, spacing: 6) {
                 Text(expense.merchant)
