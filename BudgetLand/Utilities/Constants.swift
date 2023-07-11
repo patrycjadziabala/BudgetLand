@@ -16,6 +16,15 @@ struct Constants {
     static let categoryBackgroundColor = "Category background"
     static let mainHeaderBackground = "MainHeaderBackground"
     static let bellBadge = "bell.badge"
+    static let foodIcon = "cart"
+    static let billsIcon = "dollarsign.circle"
+    static let transportIcon = "car"
+    static let holidayIcon = "suitcase.rolling"
+    static let healthIcon = "bandage"
+    static let subscriptionsIcon = "clock.arrow.2.circlepath"
+    static let loansIcon = "creditcard"
+    static let shoppingIcon = "bag"
+    
     
     // MARK: - Colors
     static let customBlue = "CustomBlue"

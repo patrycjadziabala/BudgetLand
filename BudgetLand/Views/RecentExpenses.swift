@@ -6,10 +6,9 @@
 //
 
 import SwiftUI
-import FASwiftUI
 
 struct RecentExpenses: View {
-    @EnvironmentObject var expenseListVM: ExpenseListViewModel
+//    @EnvironmentObject var expenseListVM: ExpenseListViewModel
     
     var body: some View {
         VStack {
@@ -22,19 +21,19 @@ struct RecentExpenses: View {
                 } label: {
                     HStack(spacing: 4) {
                         Text("See All")
-                        FAText(iconName: "receipt", size: 26)
+                        
                     } // hstack
                 }
             } //hstack
             .padding()
             .frame(height: 25)
             
-            ForEach(Array(expenseListVM.expenses.prefix(5).enumerated()), id: \.element) { index,
-                expense in
-                ExpenseRow(expense: expense)
-                Divider()
-                    .opacity(index == 4 ? 0 : 1)
-            }
+//            ForEach(Array(expenseListVM.expenses.prefix(5).enumerated()), id: \.element) { index,
+//                expense in
+//                ExpenseRow(expense: expense)
+//                Divider()
+//                    .opacity(index == 4 ? 0 : 1)
+//            }
         } //vstack
         .padding()
         .background(Color(Constants.customBlue))
@@ -44,14 +43,14 @@ struct RecentExpenses: View {
 }
 
 struct RecentExpenses_Previews: PreviewProvider {
-    static let expenseListVM: ExpenseListViewModel = {
-        let expenseListVM = ExpenseListViewModel()
-        expenseListVM.expenses = expenseListPreviewData
-        return expenseListVM
-    }()
+//    static let expenseListVM: ExpenseListViewModel = {
+//        let expenseListVM = ExpenseListViewModel()
+//        expenseListVM.expenses = expenseListPreviewData
+//        return expenseListVM
+//    }()
     
     static var previews: some View {
         RecentExpenses()
-            .environmentObject(expenseListVM)
+//            .environmentObject(expenseListVM)
     }
 }

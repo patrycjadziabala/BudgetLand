@@ -21,7 +21,7 @@ struct CategoryTitleView: View {
                     Circle()
                         .foregroundColor(.white)
                         .frame(height: 60)
-                    Image(systemName: categoryIcon)
+                    Image(systemName: Constants.coinImage)
                         .resizable()
                         .scaledToFit()
                         .frame(height: 30)
