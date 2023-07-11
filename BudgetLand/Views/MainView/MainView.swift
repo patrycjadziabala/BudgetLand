@@ -15,6 +15,7 @@ struct MainView: View {
             ZStack {
                     VStack (spacing: 40) {
                         HeaderForMainView()
+                        RecentExpenses()
                         CategoriesCardView()
                     } //v stack
             } // z stack

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RecentExpenses: View {
-//    @EnvironmentObject var expenseListVM: ExpenseListViewModel
+    @StateObject var viewModel = RecentExpensesViewModel()
     
     var body: some View {
         VStack {
@@ -27,6 +27,9 @@ struct RecentExpenses: View {
             } //hstack
             .padding()
             .frame(height: 25)
+            ForEach(viewModel.allExpenses, id: \.id) { expense in
+                ExpenseRow(description: expense.expenseDescription ?? "", expenseType: expense.type, expenseDate: expense.expenseDate ?? Date(), amount: expense.expenseAmount)
+            }
             
 //            ForEach(Array(expenseListVM.expenses.prefix(5).enumerated()), id: \.element) { index,
 //                expense in

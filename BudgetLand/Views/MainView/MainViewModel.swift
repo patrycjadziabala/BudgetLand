@@ -16,7 +16,11 @@ final class MainViewModel: ObservableObject {
         // Fetching data
     }
     func saveExpense(date: Date, type: ExpenseType, amount: Double, description: String) {
-        persistanceController.saveExpense(date: date, amount: amount, type: type, description: description)
+        if description.isEmpty {
+            persistanceController.saveExpense(date: date, amount: amount, type: type, description: "Expense")
+        } else {
+            persistanceController.saveExpense(date: date, amount: amount, type: type, description: description)
+        }
         let data = persistanceController.fetchExpenses()
         print(data)
     }

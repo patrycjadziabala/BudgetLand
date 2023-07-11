@@ -48,7 +48,7 @@ struct AddExpenseView: View {
                     
                 )
                 .padding()
-                TextField("Notes", text: $description, axis: .vertical)
+                TextField("Notes", text: $description)
                     .background(
                         Color.white.cornerRadius(20)
                             .frame(height: 50)
@@ -71,8 +71,9 @@ struct AddExpenseView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(height: 70)
-                        .foregroundColor(Color(Constants.customDarkBlue))
+                        .foregroundColor(self.expenseAmount == nil ? Color(Constants.customDarkBlue).opacity(0.4) : Color(Constants.customDarkBlue))
                 } //button
+                .disabled(self.expenseAmount == nil)
             } //vstack
         } //zstack
     }
