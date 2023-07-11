@@ -37,7 +37,7 @@ struct WelcomeView: View {
                         LinearGradient(colors: [.blue, .green, .cyan], startPoint: .topLeading, endPoint: .bottomTrailing))
                     .shadow(radius: 1)
                 
-                AsyncImage(url: URL(string: imageURL), transaction: Transaction(animation: .easeIn(duration: 1))) { phase in
+                AsyncImage(url: URL(string: imageURL), transaction: Transaction(animation: .easeIn(duration: 0.7))) { phase in
                     switch phase {
                     case .success(let image):
                         image.imageModifier()

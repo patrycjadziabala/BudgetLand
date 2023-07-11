@@ -7,6 +7,12 @@
 
 import Foundation
 
+
+
+
+
+
+
 let customCategories = [
 Category(title: "Food", icon: "cart"),
 Category(title: "Bills", icon: "dollarsign.circle"),
