@@ -23,8 +23,6 @@ extension Image {
 }
 
 struct WelcomeView: View {
-    @AppStorage("welcomeViewShown")
-    var welcomeViewShown: Bool = false
     
     @State private var showEntry: Bool = true
     @State private var name: String = ""
@@ -78,9 +76,7 @@ struct WelcomeView: View {
         } else {
             MainView()
         }
-        
     }
-    
 }
 
 struct WelcomeView_Previews: PreviewProvider {

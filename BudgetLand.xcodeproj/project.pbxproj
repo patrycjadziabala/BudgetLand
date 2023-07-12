@@ -44,6 +44,9 @@
 		46DA86082A5C6C40003E2F13 /* Expenses+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA86062A5C6C40003E2F13 /* Expenses+CoreDataProperties.swift */; };
 		46DA860F2A5DAF67003E2F13 /* RecentExpensesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA860E2A5DAF67003E2F13 /* RecentExpensesViewModel.swift */; };
 		46DA86112A5EDFA3003E2F13 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA86102A5EDFA3003E2F13 /* WelcomeViewModel.swift */; };
+		46DA86132A5F5287003E2F13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA86122A5F5287003E2F13 /* ContentView.swift */; };
+		46DA86162A5F552E003E2F13 /* ReportsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA86152A5F552E003E2F13 /* ReportsMainView.swift */; };
+		46DA86192A5F598D003E2F13 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA86182A5F598D003E2F13 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +89,9 @@
 		46DA86062A5C6C40003E2F13 /* Expenses+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expenses+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		46DA860E2A5DAF67003E2F13 /* RecentExpensesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentExpensesViewModel.swift; sourceTree = "<group>"; };
 		46DA86102A5EDFA3003E2F13 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		46DA86122A5F5287003E2F13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		46DA86152A5F552E003E2F13 /* ReportsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsMainView.swift; sourceTree = "<group>"; };
+		46DA86182A5F598D003E2F13 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,8 +160,10 @@
 			isa = PBXGroup;
 			children = (
 				46846D322A5428110025D5A0 /* WelcomeView */,
+				46DA86142A5F5297003E2F13 /* ContentView */,
 				46846D312A5428050025D5A0 /* MainView */,
 				46846D302A5427E00025D5A0 /* Categories */,
+				46DA861A2A5F5994003E2F13 /* SettingsView */,
 				46D9106D2A55B3ED0072D528 /* Overview.swift */,
 				46DA85EF2A55C329003E2F13 /* ExpenseRow.swift */,
 				46DA85FC2A5726AE003E2F13 /* RecentExpenses.swift */,
@@ -204,6 +212,7 @@
 				461648832A4B7AE400B24D88 /* CategoriesCardView.swift */,
 				4616489D2A4C7FB800B24D88 /* CategoryDetailsView.swift */,
 				461648852A4C65D700B24D88 /* CategoryTitleView.swift */,
+				46DA86172A5F5532003E2F13 /* ReportsView */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -238,6 +247,30 @@
 				46DA86062A5C6C40003E2F13 /* Expenses+CoreDataProperties.swift */,
 			);
 			path = Persistence;
+			sourceTree = "<group>";
+		};
+		46DA86142A5F5297003E2F13 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				46DA86122A5F5287003E2F13 /* ContentView.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		46DA86172A5F5532003E2F13 /* ReportsView */ = {
+			isa = PBXGroup;
+			children = (
+				46DA86152A5F552E003E2F13 /* ReportsMainView.swift */,
+			);
+			path = ReportsView;
+			sourceTree = "<group>";
+		};
+		46DA861A2A5F5994003E2F13 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				46DA86182A5F598D003E2F13 /* SettingsView.swift */,
+			);
+			path = SettingsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,8 +370,11 @@
 				46DA86072A5C6C40003E2F13 /* Expenses+CoreDataClass.swift in Sources */,
 				46DA85F22A55C650003E2F13 /* Extensions.swift in Sources */,
 				46DA85F02A55C329003E2F13 /* ExpenseRow.swift in Sources */,
+				46DA86132A5F5287003E2F13 /* ContentView.swift in Sources */,
+				46DA86162A5F552E003E2F13 /* ReportsMainView.swift in Sources */,
 				46DA85EA2A55BF02003E2F13 /* ExpenseModel.swift in Sources */,
 				46DA86112A5EDFA3003E2F13 /* WelcomeViewModel.swift in Sources */,
+				46DA86192A5F598D003E2F13 /* SettingsView.swift in Sources */,
 				4616486E2A4AF31400B24D88 /* PersistenceController.swift in Sources */,
 				461648842A4B7AE400B24D88 /* CategoriesCardView.swift in Sources */,
 				461648712A4AF31400B24D88 /* BudgetLand.xcdatamodeld in Sources */,

@@ -24,7 +24,9 @@ struct Constants {
     static let subscriptionsIcon = "clock.arrow.2.circlepath"
     static let loansIcon = "creditcard"
     static let shoppingIcon = "bag"
-    
+    static let homeIcon = "house.fill"
+    static let chartIcon = "chart.xyaxis.line"
+    static let settingsIcon = "slider.horizontal.3"
     
     // MARK: - Colors
     static let customBlue = "CustomBlue"
@@ -43,6 +45,8 @@ struct Constants {
     static let enter = "Enter"
     static let dashboard = "Dashboard"
     static let overview = "Overview"
+    static let reports = "Reports"
+    static let settings = "Settings"
     
     //MARK: - Fonts
     static let fontLight = "YsabeauInfant-Light"
