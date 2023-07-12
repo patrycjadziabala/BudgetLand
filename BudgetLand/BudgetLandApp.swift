@@ -7,14 +7,28 @@
 
 import SwiftUI
 
+extension UserDefaults {
+    
+    var welcomeViewShown: Bool {
+        get {
+            return (UserDefaults.standard.value(forKey: "welcomeViewShown") as? Bool) ?? false
+        }
+        set {
+            UserDefaults.standard.setValue(newValue, forKey: "welcomeViewShown")
+        }
+    }
+}
+
 @main
 struct BudgetLandApp: App {
-//   @StateObject var expensesListVM = ExpenseListViewModel()
     
     var body: some Scene {
         WindowGroup {
-            WelcomeView()
-//                .environmentObject(expensesListVM)
+            if UserDefaults.standard.welcomeViewShown {
+                MainView()
+            } else {
+                WelcomeView()
+            }
         }
     }
 }

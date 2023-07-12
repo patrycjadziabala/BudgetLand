@@ -43,6 +43,7 @@
 		46DA86072A5C6C40003E2F13 /* Expenses+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA86052A5C6C40003E2F13 /* Expenses+CoreDataClass.swift */; };
 		46DA86082A5C6C40003E2F13 /* Expenses+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA86062A5C6C40003E2F13 /* Expenses+CoreDataProperties.swift */; };
 		46DA860F2A5DAF67003E2F13 /* RecentExpensesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA860E2A5DAF67003E2F13 /* RecentExpensesViewModel.swift */; };
+		46DA86112A5EDFA3003E2F13 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA86102A5EDFA3003E2F13 /* WelcomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		46DA86052A5C6C40003E2F13 /* Expenses+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expenses+CoreDataClass.swift"; sourceTree = "<group>"; };
 		46DA86062A5C6C40003E2F13 /* Expenses+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expenses+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		46DA860E2A5DAF67003E2F13 /* RecentExpensesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentExpensesViewModel.swift; sourceTree = "<group>"; };
+		46DA86102A5EDFA3003E2F13 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				461648772A4AF3C700B24D88 /* WelcomeView.swift */,
+				46DA86102A5EDFA3003E2F13 /* WelcomeViewModel.swift */,
 				4616487D2A4B18E300B24D88 /* EnterButton.swift */,
 			);
 			path = WelcomeView;
@@ -335,6 +338,7 @@
 				46DA85F22A55C650003E2F13 /* Extensions.swift in Sources */,
 				46DA85F02A55C329003E2F13 /* ExpenseRow.swift in Sources */,
 				46DA85EA2A55BF02003E2F13 /* ExpenseModel.swift in Sources */,
+				46DA86112A5EDFA3003E2F13 /* WelcomeViewModel.swift in Sources */,
 				4616486E2A4AF31400B24D88 /* PersistenceController.swift in Sources */,
 				461648842A4B7AE400B24D88 /* CategoriesCardView.swift in Sources */,
 				461648712A4AF31400B24D88 /* BudgetLand.xcdatamodeld in Sources */,
