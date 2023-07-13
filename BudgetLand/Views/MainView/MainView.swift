@@ -27,7 +27,7 @@ struct MainView: View {
                     Button {
                         addExpensePresented.toggle()
                     } label: {
-                        Image(systemName: "plus.circle.fill")
+                        Image(systemName: Constants.addIcon)
                             .resizable()
                             .scaledToFit()
                             .frame(height: 90)

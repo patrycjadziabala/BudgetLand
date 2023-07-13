@@ -25,7 +25,7 @@ struct BudgetLandApp: App {
     var body: some Scene {
         WindowGroup {
             if UserDefaults.standard.welcomeViewShown {
-                MainView()
+                ContentView()
             } else {
                 WelcomeView()
             }

@@ -12,15 +12,15 @@ struct ContentView: View {
         TabView {
             MainView()
                 .tabItem {
-                    Label("Home", systemImage: Constants.homeIcon)
+                    Label(Constants.home, systemImage: Constants.homeIcon)
                 }
             ReportsMainView()
                 .tabItem {
-                    Label("Reports", systemImage: Constants.chartIcon)
+                    Label(Constants.reports, systemImage: Constants.chartIcon)
                 }
             SettingsView()
                 .tabItem {
-                    Label("Settings", systemImage: Constants.settingsIcon)
+                    Label(Constants.settings, systemImage: Constants.settingsIcon)
                 }
         } //tabView
     }

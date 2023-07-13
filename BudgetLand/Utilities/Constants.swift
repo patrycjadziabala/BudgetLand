@@ -28,7 +28,8 @@ struct Constants {
     static let chartIcon = "chart.xyaxis.line"
     static let settingsIcon = "slider.horizontal.3"
     static let eraser = "eraser.line.dashed.fill"
-    static let arrowIcon = ""
+    static let clearIcon = "xmark.circle.fill"
+    static let addIcon = "plus.circle.fill"
     
     // MARK: - Colors
     static let customBlue = "CustomBlue"
@@ -47,10 +48,12 @@ struct Constants {
     static let enter = "Enter"
     static let dashboard = "Dashboard"
     static let overview = "Overview"
+    static let home = "Home"
     static let reports = "Reports"
     static let settings = "Settings"
     static let clearData = "Clear data"
     static let manageCategories = "Manage categories"
+    static let newCategory = "New Category"
     
     //MARK: - Fonts
     static let fontLight = "YsabeauInfant-Light"
