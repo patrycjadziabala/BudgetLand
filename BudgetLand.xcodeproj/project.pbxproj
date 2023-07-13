@@ -48,6 +48,7 @@
 		46DA86162A5F552E003E2F13 /* ReportsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA86152A5F552E003E2F13 /* ReportsMainView.swift */; };
 		46DA86192A5F598D003E2F13 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA86182A5F598D003E2F13 /* SettingsView.swift */; };
 		46DA861C2A5F6E2E003E2F13 /* ManageCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA861B2A5F6E2E003E2F13 /* ManageCategoriesView.swift */; };
+		46DA86212A60353D003E2F13 /* SymbolPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 46DA86202A60353D003E2F13 /* SymbolPicker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46DA86212A60353D003E2F13 /* SymbolPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +295,7 @@
 			);
 			name = BudgetLand;
 			packageProductDependencies = (
+				46DA86202A60353D003E2F13 /* SymbolPicker */,
 			);
 			productName = BudgetLand;
 			productReference = 461648612A4AF31300B24D88 /* BudgetLand.app */;
@@ -323,6 +326,7 @@
 			);
 			mainGroup = 461648582A4AF31300B24D88;
 			packageReferences = (
+				46DA861F2A60353D003E2F13 /* XCRemoteSwiftPackageReference "SymbolPicker" */,
 			);
 			productRefGroup = 461648622A4AF31300B24D88 /* Products */;
 			projectDirPath = "";
@@ -591,6 +595,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		46DA861F2A60353D003E2F13 /* XCRemoteSwiftPackageReference "SymbolPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xnth97/SymbolPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		46DA86202A60353D003E2F13 /* SymbolPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46DA861F2A60353D003E2F13 /* XCRemoteSwiftPackageReference "SymbolPicker" */;
+			productName = SymbolPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4616486F2A4AF31400B24D88 /* BudgetLand.xcdatamodeld */ = {

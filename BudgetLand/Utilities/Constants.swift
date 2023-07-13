@@ -10,11 +10,13 @@ import Foundation
 struct Constants {
     // MARK: - Images
     static let welcomeScreenImage = "https://iamaledelgado.files.wordpress.com/2012/10/money.png"
-    static let antFill = "ant.fill"
     static let photoCircleFill = "photo.circle.fill"
     static let coinImage = "digitalcrown.arrow.counterclockwise"
     static let categoryBackgroundColor = "Category background"
     static let mainHeaderBackground = "MainHeaderBackground"
+    
+    // MARK: - Icons
+    static let antFill = "ant.fill"
     static let bellBadge = "bell.badge"
     static let foodIcon = "cart"
     static let billsIcon = "dollarsign.circle"
@@ -30,6 +32,17 @@ struct Constants {
     static let eraser = "eraser.line.dashed.fill"
     static let clearIcon = "xmark.circle.fill"
     static let addIcon = "plus.circle.fill"
+    static let animalIcon = "pawprint.fill"
+    static let flowerIcon = "camera.macro"
+    static let scienceIcon = "atom"
+    static let mountain = "mountain.2"
+    static let water = "water.waves"
+    static let snow = "snowflake"
+    static let night = "moon.stars"
+    static let sun = "sun.max"
+    static let globe = "globe.americas"
+    static let people = "person.2.circle"
+    static let gift = "giftcard"
     
     // MARK: - Colors
     static let customBlue = "CustomBlue"

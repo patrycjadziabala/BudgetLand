@@ -6,11 +6,15 @@
 //
 
 import SwiftUI
+import SymbolPicker
 
 struct ManageCategoriesView: View {
+    @State private var isAlertShowing = false
     @State private var newCategory: String = ""
     @State private var newCategoryColor = Color(.sRGB, red: 0.98, green: 0.9, blue: 0.2)
     @State private var categories: [Category] = customCategories
+    @State private var iconPickerPresented = false
+    @State private var icon = "pencil"
     
     var body: some View {
         NavigationView {
@@ -36,6 +40,7 @@ struct ManageCategoriesView: View {
                     TextField(Constants.newCategory, text: $newCategory)
                         .padding()
                         .textFieldStyle(.roundedBorder)
+                        .keyboardType(.default)
                     if newCategory.count > 0 {
                         Button {
                             newCategory = ""
@@ -44,21 +49,46 @@ struct ManageCategoriesView: View {
                                 .labelStyle(.iconOnly)
                         } // button
                     }
-                        ColorPicker("Color Picker", selection: $newCategoryColor)
-                            .labelsHidden()
-                            .padding()
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: Constants.addIcon)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(height: 40)
-                        } //button
+                    Button(action: {
+                        iconPickerPresented = true
+                    })
+                    {
+                        Image(systemName: icon)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 20)
+                    }
+                    .sheet(isPresented: $iconPickerPresented) {
+                        SymbolPicker(symbol: $icon)
+                    }
+                    ColorPicker("Color Picker", selection: $newCategoryColor)
+                        .labelsHidden()
+                        .padding()
+                    Button {
+                        if newCategory.count > 0  {
+                            categories.append(Category(
+                                title: newCategory,
+                                color: newCategoryColor,
+                                icon: icon))
+                            newCategory = ""
+                        } else {
+                            isAlertShowing = true
+                        }
+                    } label: {
+                        Image(systemName: Constants.addIcon)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 40)
+                    } //button "add categories"
                 } //hstack
                 .padding(.horizontal, 16)
                 .shadow(radius: 2)
                 .frame(maxHeight: .infinity, alignment: .bottom)
+                .alert("Enter Category Title and/or choose an icon)", isPresented: $isAlertShowing) {
+                    Button("OK", role: .cancel) {
+                        isAlertShowing = false
+                    }
+                }
             } //zstack
             .navigationTitle(Constants.manageCategories)
             .background()

@@ -7,7 +7,7 @@
 
 import Foundation
 
-let customCategories = [
+var customCategories = [
     Category(title: "Food", color: .blue, icon: "cart"),
     Category(title: "Bills", color: .red, icon: "dollarsign.circle"),
     Category(title: "Transport", color: .accentColor, icon: "car"),
@@ -16,6 +16,19 @@ let customCategories = [
     Category(title: "Subscriptions", color: .green, icon: "clock.arrow.2.circlepath"),
     Category(title: "Loans", color: .orange, icon: "creditcard"),
     Category(title: "Shopping", color: .pink, icon: "bag")
+]
+
+let icons = [Constants.animalIcon,
+             Constants.flowerIcon,
+             Constants.scienceIcon,
+             Constants.mountain,
+             Constants.water,
+             Constants.snow,
+             Constants.night,
+             Constants.sun,
+             Constants.globe,
+             Constants.people,
+             Constants.gift
 ]
 
 let colors = [
