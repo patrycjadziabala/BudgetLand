@@ -7,21 +7,15 @@
 
 import Foundation
 
-
-
-
-
-
-
 let customCategories = [
-Category(title: "Food", icon: "cart"),
-Category(title: "Bills", icon: "dollarsign.circle"),
-Category(title: "Transport", icon: "car"),
-Category(title: "Holiday", icon: "suitcase.rolling"),
-Category(title: "Health", icon: "bandage"),
-Category(title: "Subscriptions", icon: "clock.arrow.2.circlepath"),
-Category(title: "Loans", icon: "creditcard"),
-Category(title: "Shopping", icon: "bag")
+    Category(title: "Food", color: .blue, icon: "cart"),
+    Category(title: "Bills", color: .red, icon: "dollarsign.circle"),
+    Category(title: "Transport", color: .accentColor, icon: "car"),
+    Category(title: "Holiday", color: .cyan, icon: "suitcase.rolling"),
+    Category(title: "Health", color: .gray, icon: "bandage"),
+    Category(title: "Subscriptions", color: .green, icon: "clock.arrow.2.circlepath"),
+    Category(title: "Loans", color: .orange, icon: "creditcard"),
+    Category(title: "Shopping", color: .pink, icon: "bag")
 ]
 
 let colors = [
