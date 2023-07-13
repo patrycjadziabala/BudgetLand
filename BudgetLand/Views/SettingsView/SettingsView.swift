@@ -10,8 +10,18 @@ import SwiftUI
 struct SettingsView: View {
     var body: some View {
         NavigationView {
-            Text("Settings")
-                .navigationTitle(Constants.settings)
+            List {
+                NavigationLink {
+                    ManageCategoriesView()
+                } label: {
+                    Text(Constants.manageCategories)
+                }
+                Button(role: .destructive) {
+                } label: {
+                    Text(Constants.clearData)
+                }
+            }
+            .navigationTitle(Constants.settings)
         }
     }
 }

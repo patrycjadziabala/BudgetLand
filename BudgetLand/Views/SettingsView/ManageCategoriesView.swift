@@ -9,7 +9,19 @@ import SwiftUI
 
 struct ManageCategoriesView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                Text("Food")
+                Text("Subscriptions")
+                Text("Bills")
+                Spacer()
+                HStack {
+                    
+                }
+            }
+            
+            .navigationTitle(Constants.manageCategories)
+        }
     }
 }
 

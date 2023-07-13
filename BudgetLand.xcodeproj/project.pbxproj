@@ -47,6 +47,7 @@
 		46DA86132A5F5287003E2F13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA86122A5F5287003E2F13 /* ContentView.swift */; };
 		46DA86162A5F552E003E2F13 /* ReportsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA86152A5F552E003E2F13 /* ReportsMainView.swift */; };
 		46DA86192A5F598D003E2F13 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA86182A5F598D003E2F13 /* SettingsView.swift */; };
+		46DA861C2A5F6E2E003E2F13 /* ManageCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA861B2A5F6E2E003E2F13 /* ManageCategoriesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		46DA86122A5F5287003E2F13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		46DA86152A5F552E003E2F13 /* ReportsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsMainView.swift; sourceTree = "<group>"; };
 		46DA86182A5F598D003E2F13 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		46DA861B2A5F6E2E003E2F13 /* ManageCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageCategoriesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				46DA86182A5F598D003E2F13 /* SettingsView.swift */,
+				46DA861B2A5F6E2E003E2F13 /* ManageCategoriesView.swift */,
 			);
 			path = SettingsView;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				46DA86042A5C697A003E2F13 /* Persistence+Expense.swift in Sources */,
 				46DA85EC2A55C06F003E2F13 /* PreviewData.swift in Sources */,
 				46DA860F2A5DAF67003E2F13 /* RecentExpensesViewModel.swift in Sources */,
+				46DA861C2A5F6E2E003E2F13 /* ManageCategoriesView.swift in Sources */,
 				4616489C2A4C756600B24D88 /* CategoryData.swift in Sources */,
 				461648A02A4C882000B24D88 /* HeaderForMainView.swift in Sources */,
 				461648862A4C65D700B24D88 /* CategoryTitleView.swift in Sources */,

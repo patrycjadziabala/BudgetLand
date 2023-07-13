@@ -27,6 +27,8 @@ struct Constants {
     static let homeIcon = "house.fill"
     static let chartIcon = "chart.xyaxis.line"
     static let settingsIcon = "slider.horizontal.3"
+    static let eraser = "eraser.line.dashed.fill"
+    static let arrowIcon = ""
     
     // MARK: - Colors
     static let customBlue = "CustomBlue"
@@ -47,6 +49,8 @@ struct Constants {
     static let overview = "Overview"
     static let reports = "Reports"
     static let settings = "Settings"
+    static let clearData = "Clear data"
+    static let manageCategories = "Manage categories"
     
     //MARK: - Fonts
     static let fontLight = "YsabeauInfant-Light"
