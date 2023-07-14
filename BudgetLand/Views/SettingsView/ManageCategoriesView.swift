@@ -16,11 +16,27 @@ struct ManageCategoriesView: View {
     @State private var iconPickerPresented = false
     @State private var icon = "pencil"
     
+    func addCategory() {
+        if newCategory.count > 0  {
+            categories.append(Category(
+                title: newCategory,
+                color: newCategoryColor,
+                icon: icon))
+            newCategory = ""
+        } else {
+            isAlertShowing = true
+        }
+    }
+    
+    func deleteCategory(at offsets: IndexSet) {
+        categories.remove(atOffsets: offsets)
+    }
+    
     var body: some View {
         NavigationView {
             ZStack {
                 List {
-                    ForEach(categories) { category in
+                    ForEach(categories, id: \.self) { category in
                         HStack {
                             Image(systemName: category.icon)
                                 .resizable()
@@ -29,9 +45,17 @@ struct ManageCategoriesView: View {
                                 .foregroundColor(category.color)
                                 .padding(10)
                             Text(category.title)
+                                .swipeActions(allowsFullSwipe: false) {
+                                    Button {
+                                        print("Works")
+                                    } label: {
+                                        Label("Delete Category", systemImage: "trash.fill")
+                                    }
+                                }
                         }
+                        
                     }
-                    Spacer()
+                    .onDelete(perform: deleteCategory)
                 } // list
                 Color(Constants.customBlue)
                     .opacity(0.25)
@@ -41,6 +65,10 @@ struct ManageCategoriesView: View {
                         .padding()
                         .textFieldStyle(.roundedBorder)
                         .keyboardType(.default)
+                        .submitLabel(.continue)
+                        .onSubmit {
+                            addCategory()
+                        }
                     if newCategory.count > 0 {
                         Button {
                             newCategory = ""
@@ -65,15 +93,7 @@ struct ManageCategoriesView: View {
                         .labelsHidden()
                         .padding()
                     Button {
-                        if newCategory.count > 0  {
-                            categories.append(Category(
-                                title: newCategory,
-                                color: newCategoryColor,
-                                icon: icon))
-                            newCategory = ""
-                        } else {
-                            isAlertShowing = true
-                        }
+                        addCategory()
                     } label: {
                         Image(systemName: Constants.addIcon)
                             .resizable()
@@ -93,6 +113,7 @@ struct ManageCategoriesView: View {
             .navigationTitle(Constants.manageCategories)
             .background()
             .foregroundColor(Color(Constants.customDarkBlue))
+            .toolbar(.hidden, for: .tabBar)
         } // navigationView
     }
 }

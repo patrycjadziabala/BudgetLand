@@ -74,7 +74,7 @@ struct WelcomeView: View {
                 UserDefaults.standard.welcomeViewShown = true
             })
         } else {
-            MainView()
+            ContentView()
         }
     }
 }
