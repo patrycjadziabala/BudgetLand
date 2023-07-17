@@ -67,6 +67,7 @@ struct Constants {
     static let clearData = "Clear data"
     static let manageCategories = "Manage categories"
     static let newCategory = "New Category"
+    static let currency = "Currency"
     
     //MARK: - Fonts
     static let fontLight = "YsabeauInfant-Light"

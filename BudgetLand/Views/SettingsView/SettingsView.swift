@@ -10,7 +10,6 @@ import SwiftUI
 struct SettingsView: View {
     var body: some View {
         NavigationView {
-            ZStack {
                 List {
                     NavigationLink {
                         ManageCategoriesView()
@@ -22,10 +21,7 @@ struct SettingsView: View {
                         Text(Constants.clearData)
                     }
                 } //list
-                Color(Constants.customBlue)
-                    .opacity(0.25)
                 .navigationTitle(Constants.settings)
-            } //ztack
         }
     }
 }

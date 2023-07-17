@@ -14,6 +14,9 @@ struct AddExpenseView: View {
     @State private var expenseAmount: Double?
     @State private var expenseCategory: ExpenseType = .bills
     @State private var description: String = ""
+    @State private var currency: Currency = .PLN
+    @State private var recurrence: Recurrnce = .none
+   
     var body: some View {
         ZStack {
             Color(Constants.customGreen)
@@ -36,16 +39,36 @@ struct AddExpenseView: View {
                         .colorMultiply(Color(Constants.customDarkBlue))
                         .background(Color(Constants.customBlue).opacity(0.6))
                         .cornerRadius(90)
-                }
+                } //vstack
+                    Picker(selection: $currency, label: Text("")) {
+                        Text("PLN").tag(Currency.PLN)
+                        Text("GBP").tag(Currency.GBP)
+                        Text("EUR").tag(Currency.EUR)
+                        Text("USD").tag(Currency.USD)
+                    } //picker
+                    .pickerStyle(.segmented)
+                    .padding()
+                HStack {
+                    Text("Recurrence")
+                    Spacer()
+                    Picker("", selection: $recurrence) {
+                            Text("None").tag(Recurrnce.none)
+                            Text("Daily").tag(Recurrnce.daily)
+                            Text("Weekly").tag(Recurrnce.weekly)
+                            Text("Monthly").tag(Recurrnce.monthly)
+                            Text("Yearly").tag(Recurrnce.yearly)
+                    } //picker
+                } //hstack
+                .padding()
                 TextField(value: $expenseAmount, format: .number) {
                     Text("Enter amount")
                 } // textField
+              
                 .keyboardType(.numberPad)
                 .background(
                     Color.white
                     .cornerRadius(20)
                     .frame(height: 50)
-                    
                 )
                 .padding()
                 TextField("Notes", text: $description)

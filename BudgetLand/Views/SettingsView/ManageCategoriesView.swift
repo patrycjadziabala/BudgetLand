@@ -15,10 +15,12 @@ struct ManageCategoriesView: View {
     @State private var categories: [Category] = customCategories
     @State private var iconPickerPresented = false
     @State private var icon = "pencil"
+    @State private var id: UUID = UUID.init()
     
     func addCategory() {
         if newCategory.count > 0  {
             categories.append(Category(
+                id: id,
                 title: newCategory,
                 color: newCategoryColor,
                 icon: icon))
@@ -34,7 +36,7 @@ struct ManageCategoriesView: View {
     
     var body: some View {
         NavigationView {
-            ZStack {
+            VStack {
                 List {
                     ForEach(categories, id: \.self) { category in
                         HStack {
@@ -53,13 +55,12 @@ struct ManageCategoriesView: View {
                                     }
                                 }
                         }
-                        
                     }
                     .onDelete(perform: deleteCategory)
                 } // list
-                Color(Constants.customBlue)
-                    .opacity(0.25)
-                    .ignoresSafeArea()
+                //            Color(Constants.customBlue)
+                //                .opacity(0.25)
+                //                .ignoresSafeArea()
                 HStack (spacing: 5) {
                     TextField(Constants.newCategory, text: $newCategory)
                         .padding()
@@ -103,17 +104,17 @@ struct ManageCategoriesView: View {
                 } //hstack
                 .padding(.horizontal, 16)
                 .shadow(radius: 2)
-                .frame(maxHeight: .infinity, alignment: .bottom)
+                .frame(maxHeight: 25, alignment: .bottom)
                 .alert("Enter Category Title and/or choose an icon)", isPresented: $isAlertShowing) {
                     Button("OK", role: .cancel) {
                         isAlertShowing = false
                     }
                 }
-            } //zstack
-            .navigationTitle(Constants.manageCategories)
-            .background()
-            .foregroundColor(Color(Constants.customDarkBlue))
-            .toolbar(.hidden, for: .tabBar)
+                .navigationTitle(Constants.manageCategories)
+                .background()
+                .foregroundColor(Color(Constants.customDarkBlue))
+                .toolbar(.hidden, for: .tabBar)
+            } //vstack
         } // navigationView
     }
 }
