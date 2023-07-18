@@ -68,6 +68,12 @@ struct Constants {
     static let manageCategories = "Manage categories"
     static let newCategory = "New Category"
     static let currency = "Currency"
+    static let allExpenses = "All Expenses"
+    static let totalFor = "Total for:"
+    static let today = "today"
+    static let thisWeek = "this week"
+    static let thisMonth = "this month"
+    static let thisYear = "this year"
     
     //MARK: - Fonts
     static let fontLight = "YsabeauInfant-Light"

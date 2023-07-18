@@ -15,7 +15,7 @@ struct AddExpenseView: View {
     @State private var expenseCategory: ExpenseType = .bills
     @State private var description: String = ""
     @State private var currency: Currency = .PLN
-    @State private var recurrence: Recurrnce = .none
+    @State private var recurrence: Recurrence = .none
    
     var body: some View {
         ZStack {
@@ -52,11 +52,11 @@ struct AddExpenseView: View {
                     Text("Recurrence")
                     Spacer()
                     Picker("", selection: $recurrence) {
-                            Text("None").tag(Recurrnce.none)
-                            Text("Daily").tag(Recurrnce.daily)
-                            Text("Weekly").tag(Recurrnce.weekly)
-                            Text("Monthly").tag(Recurrnce.monthly)
-                            Text("Yearly").tag(Recurrnce.yearly)
+                            Text("None").tag(Recurrence.none)
+                            Text("Daily").tag(Recurrence.daily)
+                            Text("Weekly").tag(Recurrence.weekly)
+                            Text("Monthly").tag(Recurrence.monthly)
+                            Text("Yearly").tag(Recurrence.yearly)
                     } //picker
                 } //hstack
                 .padding()

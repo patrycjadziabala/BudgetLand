@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Recurrnce: String {
+enum Recurrence: String {
 case none
 case daily
 case weekly

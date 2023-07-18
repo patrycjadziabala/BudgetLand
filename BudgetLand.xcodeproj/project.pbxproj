@@ -51,6 +51,8 @@
 		46DA86212A60353D003E2F13 /* SymbolPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 46DA86202A60353D003E2F13 /* SymbolPicker */; };
 		46DA86262A65D4D8003E2F13 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA86252A65D4D8003E2F13 /* CurrencyModel.swift */; };
 		46DA86282A65DA4A003E2F13 /* RecurrenceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA86272A65DA4A003E2F13 /* RecurrenceModel.swift */; };
+		46DA862A2A66A3CC003E2F13 /* AllExpenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA86292A66A3CC003E2F13 /* AllExpenses.swift */; };
+		46DA862E2A66AA4C003E2F13 /* TotalExpensesInCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA862D2A66AA4C003E2F13 /* TotalExpensesInCurrency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +101,8 @@
 		46DA861B2A5F6E2E003E2F13 /* ManageCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageCategoriesView.swift; sourceTree = "<group>"; };
 		46DA86252A65D4D8003E2F13 /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
 		46DA86272A65DA4A003E2F13 /* RecurrenceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurrenceModel.swift; sourceTree = "<group>"; };
+		46DA86292A66A3CC003E2F13 /* AllExpenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllExpenses.swift; sourceTree = "<group>"; };
+		46DA862D2A66AA4C003E2F13 /* TotalExpensesInCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalExpensesInCurrency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,9 +289,11 @@
 		46DA86242A65D04F003E2F13 /* Expenses */ = {
 			isa = PBXGroup;
 			children = (
+				46DA86292A66A3CC003E2F13 /* AllExpenses.swift */,
 				46DA85EF2A55C329003E2F13 /* ExpenseRow.swift */,
 				46DA85FC2A5726AE003E2F13 /* RecentExpenses.swift */,
 				46DA86002A5C5F1F003E2F13 /* AddExpenseView.swift */,
+				46DA862D2A66AA4C003E2F13 /* TotalExpensesInCurrency.swift */,
 			);
 			path = Expenses;
 			sourceTree = "<group>";
@@ -379,6 +385,7 @@
 			files = (
 				46D9106E2A55B3ED0072D528 /* Overview.swift in Sources */,
 				461648782A4AF3C700B24D88 /* WelcomeView.swift in Sources */,
+				46DA862A2A66A3CC003E2F13 /* AllExpenses.swift in Sources */,
 				46DA85FD2A5726AE003E2F13 /* RecentExpenses.swift in Sources */,
 				46DA86012A5C5F1F003E2F13 /* AddExpenseView.swift in Sources */,
 				46DA86042A5C697A003E2F13 /* Persistence+Expense.swift in Sources */,
@@ -387,6 +394,7 @@
 				46DA861C2A5F6E2E003E2F13 /* ManageCategoriesView.swift in Sources */,
 				4616489C2A4C756600B24D88 /* CategoryData.swift in Sources */,
 				461648A02A4C882000B24D88 /* HeaderForMainView.swift in Sources */,
+				46DA862E2A66AA4C003E2F13 /* TotalExpensesInCurrency.swift in Sources */,
 				461648862A4C65D700B24D88 /* CategoryTitleView.swift in Sources */,
 				461648802A4B78F300B24D88 /* MainView.swift in Sources */,
 				46DA86072A5C6C40003E2F13 /* Expenses+CoreDataClass.swift in Sources */,
