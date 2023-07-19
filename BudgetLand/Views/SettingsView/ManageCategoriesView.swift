@@ -15,20 +15,7 @@ struct ManageCategoriesView: View {
     @State private var categories: [Category] = customCategories
     @State private var iconPickerPresented = false
     @State private var icon = "pencil"
-    @State private var id: UUID = UUID.init()
-    
-    func addCategory() {
-        if newCategory.count > 0  {
-            categories.append(Category(
-                id: id,
-                title: newCategory,
-                color: newCategoryColor,
-                icon: icon))
-            newCategory = ""
-        } else {
-            isAlertShowing = true
-        }
-    }
+    @State private var addNewCategoryViewIsShowing: Bool = false
     
     func deleteCategory(at offsets: IndexSet) {
         categories.remove(atOffsets: offsets)
@@ -47,7 +34,7 @@ struct ManageCategoriesView: View {
                                 .foregroundColor(category.color)
                                 .padding(10)
                             Text(category.title)
-                                .swipeActions(allowsFullSwipe: false) {
+                                .swipeActions(allowsFullSwipe: true) {
                                     Button {
                                         print("Works")
                                     } label: {
@@ -61,59 +48,18 @@ struct ManageCategoriesView: View {
                 //            Color(Constants.customBlue)
                 //                .opacity(0.25)
                 //                .ignoresSafeArea()
-                HStack (spacing: 5) {
-                    TextField(Constants.newCategory, text: $newCategory)
-                        .padding()
-                        .textFieldStyle(.roundedBorder)
-                        .keyboardType(.default)
-                        .submitLabel(.continue)
-                        .onSubmit {
-                            addCategory()
-                        }
-                    if newCategory.count > 0 {
-                        Button {
-                            newCategory = ""
-                        } label: {
-                            Label(Constants.newCategory, systemImage: Constants.clearIcon)
-                                .labelStyle(.iconOnly)
-                        } // button
-                    }
-                    Button(action: {
-                        iconPickerPresented = true
-                    })
-                    {
-                        Image(systemName: icon)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 20)
-                    }
-                    .sheet(isPresented: $iconPickerPresented) {
-                        SymbolPicker(symbol: $icon)
-                    }
-                    ColorPicker("Color Picker", selection: $newCategoryColor)
-                        .labelsHidden()
-                        .padding()
-                    Button {
-                        addCategory()
-                    } label: {
-                        Image(systemName: Constants.addIcon)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 40)
-                    } //button "add categories"
-                } //hstack
-                .padding(.horizontal, 16)
-                .shadow(radius: 2)
-                .frame(maxHeight: 25, alignment: .bottom)
-                .alert("Enter Category Title and/or choose an icon)", isPresented: $isAlertShowing) {
-                    Button("OK", role: .cancel) {
-                        isAlertShowing = false
-                    }
-                }
                 .navigationTitle(Constants.manageCategories)
                 .background()
                 .foregroundColor(Color(Constants.customDarkBlue))
-                .toolbar(.hidden, for: .tabBar)
+//                .toolbar(.hidden, for: .tabBar)
+                Button {
+                    addNewCategoryViewIsShowing.toggle()
+                } label: {
+                    Text(Constants.addNewCategory)
+                }
+                .popover(isPresented: $addNewCategoryViewIsShowing) {
+                    AddCategoryView()
+                }
             } //vstack
         } // navigationView
     }

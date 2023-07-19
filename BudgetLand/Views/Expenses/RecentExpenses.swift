@@ -17,12 +17,8 @@ struct RecentExpenses: View {
                     .font(.custom(Constants.fontBold, size: 30))
                     .shadow(radius: 0.3)
                 Spacer()
-                NavigationLink {
-                } label: {
-                    HStack(spacing: 4) {
-                        Text("See All")
-                        
-                    } // hstack
+                NavigationLink("See All") {
+                    AllExpenses()
                 }
             } //hstack
             .padding()

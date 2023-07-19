@@ -15,7 +15,6 @@ struct MainView: View {
             ScrollView {
                     ZStack {
                             VStack (spacing: 40) {
-                                
                                 HeaderForMainView()
                                 RecentExpenses()
                                 CategoriesCardView()

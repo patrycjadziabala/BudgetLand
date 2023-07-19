@@ -63,7 +63,6 @@ struct AddExpenseView: View {
                 TextField(value: $expenseAmount, format: .number) {
                     Text("Enter amount")
                 } // textField
-              
                 .keyboardType(.numberPad)
                 .background(
                     Color.white
