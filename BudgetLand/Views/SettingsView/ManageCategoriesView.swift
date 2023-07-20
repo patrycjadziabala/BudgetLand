@@ -25,6 +25,23 @@ struct ManageCategoriesView: View {
         NavigationView {
             VStack {
                 List {
+                    Button {
+                        addNewCategoryViewIsShowing.toggle()
+                    } label: {
+                        Text(Constants.addNewCategory)
+                            .shadow(radius: 4)
+                            .foregroundColor(Color(Constants.customDarkBlue))
+                            .background(Color(Constants.customPink))
+                    }
+                    .popover(isPresented: $addNewCategoryViewIsShowing) {
+                        AddCategoryView()
+                    }
+                    .background(
+                        Rectangle()
+                            .cornerRadius(45)
+                            .padding()
+                    )
+                    .frame(maxWidth: .infinity)
                     ForEach(categories, id: \.self) { category in
                         HStack {
                             Image(systemName: category.icon)
@@ -45,21 +62,9 @@ struct ManageCategoriesView: View {
                     }
                     .onDelete(perform: deleteCategory)
                 } // list
-                //            Color(Constants.customBlue)
-                //                .opacity(0.25)
-                //                .ignoresSafeArea()
                 .navigationTitle(Constants.manageCategories)
                 .background()
                 .foregroundColor(Color(Constants.customDarkBlue))
-//                .toolbar(.hidden, for: .tabBar)
-                Button {
-                    addNewCategoryViewIsShowing.toggle()
-                } label: {
-                    Text(Constants.addNewCategory)
-                }
-                .popover(isPresented: $addNewCategoryViewIsShowing) {
-                    AddCategoryView()
-                }
             } //vstack
         } // navigationView
     }

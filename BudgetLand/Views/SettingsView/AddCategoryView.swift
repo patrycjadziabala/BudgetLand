@@ -99,7 +99,7 @@ struct AddCategoryView: View {
             } //button "add categories"
             .padding()
         } //vstack
-        .frame(width: 300, height: .infinity)
+        .frame(width: 300, height: 320)
         .background(Color(Constants.customPurple))
         .cornerRadius(45)
         .alert("Enter Category Title and/or choose an icon)", isPresented: $isAlertShowing) {
