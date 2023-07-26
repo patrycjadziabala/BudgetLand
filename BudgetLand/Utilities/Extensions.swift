@@ -7,6 +7,29 @@
 
 import Foundation
 
+extension String {
+    var isNumeric: Bool {
+        Double(self) != nil
+    }
+    
+    func isGreaterThan(_ value: Double) -> Bool {
+        guard self.isNumeric else {
+            return false
+        }
+        return Double(self)! > value
+    }
+}
+// MARK: - Number formatter
+extension NumberFormatter {
+    static var currency: NumberFormatter {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        return formatter
+    }
+}
+
+
+// MARK: - Date formatter
 extension DateFormatter {
     static let allNumeric: DateFormatter = {
         let formatter = DateFormatter()

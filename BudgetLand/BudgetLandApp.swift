@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension UserDefaults {
-    
+
     var welcomeViewShown: Bool {
         get {
             return (UserDefaults.standard.value(forKey: "welcomeViewShown") as? Bool) ?? false
@@ -24,11 +24,14 @@ struct BudgetLandApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if UserDefaults.standard.welcomeViewShown {
-                ContentView()
-            } else {
-                WelcomeView()
-            }
+//            SettingsView().environment(\.managedObjectContext, CoreDataManager.shared.persistentContainer.viewContext)
+            ContentView().environment(\.managedObjectContext, CoreDataManager.shared.persistentContainer.viewContext)
+//            if UserDefaults.standard.welcomeViewShown {
+//                ContentView().environment(\.managedObjectContext, CoreDataManager.shared.persistentContainer.viewContext)
+//                 ".environment(\.managedObjectContext, CoreDataManager.shared.persistentContainer.viewContext)" from tutorial
+//            } else {
+//                WelcomeView()
+//            }
         }
     }
 }

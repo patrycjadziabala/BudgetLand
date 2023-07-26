@@ -10,7 +10,7 @@ import SwiftUI
 struct CategoryDetailsView: View {
     var category: Category
     var body: some View {
-        Text(category.title)
+        Text(category.name)
     }
 }
 

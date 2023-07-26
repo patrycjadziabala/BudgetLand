@@ -71,7 +71,7 @@ struct WelcomeView: View {
             } // zstack
             .ignoresSafeArea()
             .onAppear(perform: {
-                UserDefaults.standard.welcomeViewShown = true
+//                UserDefaults.standard.welcomeViewShown = true
             })
         } else {
             ContentView()

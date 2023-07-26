@@ -14,6 +14,10 @@ struct ContentView: View {
                 .tabItem {
                     Label(Constants.home, systemImage: Constants.homeIcon)
                 }
+            AllExpenses()
+                .tabItem {
+                    Label(Constants.allExpenses, systemImage: Constants.billsIcon)
+                }
             ReportsMainView()
                 .tabItem {
                     Label(Constants.reports, systemImage: Constants.chartIcon)
@@ -28,6 +32,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environment(\.managedObjectContext, CoreDataManager.shared.persistentContainer.viewContext)
     }
 }

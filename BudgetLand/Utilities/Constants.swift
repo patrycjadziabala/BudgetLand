@@ -8,6 +8,7 @@
 import Foundation
 
 struct Constants {
+    
     // MARK: - Images
     static let welcomeScreenImage = "https://iamaledelgado.files.wordpress.com/2012/10/money.png"
     static let photoCircleFill = "photo.circle.fill"
@@ -62,6 +63,7 @@ struct Constants {
     static let dashboard = "Dashboard"
     static let overview = "Overview"
     static let home = "Home"
+    static let expenses = "Expenses"
     static let reports = "Reports"
     static let settings = "Settings"
     static let clearData = "Clear data"

@@ -9,8 +9,9 @@ import SwiftUI
 
 struct Category: Identifiable, Hashable {
     var id = UUID()
-    var title: String
+    var name: String
     var color: Color
     var icon: String
+    var amount: Double
 }
 

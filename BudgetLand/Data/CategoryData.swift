@@ -8,14 +8,14 @@
 import Foundation
 
 var customCategories = [
-    Category(title: "Food", color: .blue, icon: "cart"),
-    Category(title: "Bills", color: .red, icon: "dollarsign.circle"),
-    Category(title: "Transport", color: .accentColor, icon: "car"),
-    Category(title: "Holiday", color: .cyan, icon: "suitcase.rolling"),
-    Category(title: "Health", color: .gray, icon: "bandage"),
-    Category(title: "Subscriptions", color: .green, icon: "clock.arrow.2.circlepath"),
-    Category(title: "Loans", color: .orange, icon: "creditcard"),
-    Category(title: "Shopping", color: .pink, icon: "bag")
+    Category(name: "Food", color: .blue, icon: "cart", amount: 100),
+    Category(name: "Bills", color: .red, icon: "dollarsign.circle", amount: 100),
+    Category(name: "Transport", color: .accentColor, icon: "car", amount: 100),
+    Category(name: "Holiday", color: .cyan, icon: "suitcase.rolling", amount: 100),
+    Category(name: "Health", color: .gray, icon: "bandage", amount: 100),
+    Category(name: "Subscriptions", color: .green, icon: "clock.arrow.2.circlepath", amount: 100),
+    Category(name: "Loans", color: .orange, icon: "creditcard", amount: 100),
+    Category(name: "Shopping", color: .pink, icon: "bag", amount: 100)
 ]
 
 let icons = [Constants.animalIcon,

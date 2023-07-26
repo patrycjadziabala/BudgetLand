@@ -17,7 +17,7 @@ struct CategoriesCardView: View {
                     category in
                         VStack (alignment: .center, spacing: 5) {
                             let titleBackgroundColor = colors.randomElement() ?? Constants.customBlue
-                                CategoryTitleView(categoryTitle: category.title, categoryColor: titleBackgroundColor, categoryIcon: "cart")
+                                CategoryTitleView(categoryTitle: category.name, categoryColor: titleBackgroundColor, categoryIcon: "cart")
                                     .shadow(radius: 4)
                           Rectangle()
                                 .foregroundColor(Color(titleBackgroundColor))

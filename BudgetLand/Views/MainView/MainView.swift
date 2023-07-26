@@ -9,7 +9,8 @@ import SwiftUI
 
 struct MainView: View {
     @State private var addExpensePresented: Bool = false
-    @StateObject var viewModel = MainViewModel()
+//    @StateObject var viewModel = MainViewModel()
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -17,7 +18,7 @@ struct MainView: View {
                             VStack (spacing: 40) {
                                 HeaderForMainView()
                                 RecentExpenses()
-                                CategoriesCardView()
+//                                CategoriesCardView()
                             } //v stack
                     } // z stack
                 } // scroll view
@@ -33,11 +34,11 @@ struct MainView: View {
                             .padding()
                     } // button
                     .sheet(isPresented: $addExpensePresented) {
-                        AddExpenseView()
+//                        AddExpenseView(budgetCategory: [])
                     }
                 })
                 .background(Color(Constants.customBlue))
-            .environmentObject(viewModel)
+//            .environmentObject(viewModel)
             .navigationTitle(Constants.dashboard)
         } // navigantionView
     }
