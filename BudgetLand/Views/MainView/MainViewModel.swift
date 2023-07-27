@@ -29,7 +29,7 @@ final class MainViewModel: ObservableObject {
     
     func fetchExpenseForShortlist() {
         expensesShortlist = persistanceController.fetchExpenses()
-        expensesShortlist = Array(expensesShortlist.prefix(10))
+        expensesShortlist = Array(expensesShortlist.suffix(5))
     }
     
     // fetching methods and data manipulation

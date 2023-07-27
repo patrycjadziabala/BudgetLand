@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AllExpenses: View {
+    @StateObject var viewModel = AllExpensesViewModel()
     @State private var timePeriodFilter: Recurrence = .monthly
     @State private var searchText: String = ""
     @State private var currency: Currency = .GBP
@@ -39,16 +40,21 @@ struct AllExpenses: View {
                     } //hstack
                     .padding()
                     Spacer()
-//                    RecentExpenses()
+                    ForEach(viewModel.allExpenses, id: \.id) { expense in
+                        ExpenseRow(description: expense.expenseTitle ?? "", expenseType: expense.expenseType, expenseDate: expense.expenseDate ?? Date(), amount: expense.expenseAmount)
+                    }
                 } //vstack
                 .searchable(text: $searchText)
+                .onAppear() {
+                    viewModel.fetchAllExpenses()
+                }
             }
         })
         .foregroundColor(Color(Constants.customDarkBlue))
         //        .background(ignoresSafeAreaEdges: .all)
-        
     }
     
+
 }
 
 struct AllExpenses_Previews: PreviewProvider {
