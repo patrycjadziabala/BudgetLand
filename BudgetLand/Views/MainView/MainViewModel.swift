@@ -15,6 +15,7 @@ final class MainViewModel: ObservableObject {
     // properties with data for views
     
     init() {
+        addDefaultCategoriesToDatabase()
         fetchExpenseForShortlist()
     }
     
@@ -33,9 +34,18 @@ final class MainViewModel: ObservableObject {
     }
     
     func addDefaultCategoriesToDatabase() {
-        for category in customCategories {
-            let cat = BudgetCategory(context: persistanceController.viewContext)
-            cat.id
+        if UserDefaults.standard.bool(forKey: "DefaultCategoriesSet") == true {
+            return
+        } else {
+            for category in customCategories {
+                let cat = BudgetCategory(context: persistanceController.viewContext)
+                cat.id = UUID()
+                cat.name = category.name
+                cat.amount = category.amount
+                cat.color = category.color
+                cat.icon = category.icon
+            }
+            UserDefaults.standard.set(true, forKey: "DefaultCategoriesSet")
         }
     }
     

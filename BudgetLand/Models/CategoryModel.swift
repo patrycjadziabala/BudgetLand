@@ -10,7 +10,7 @@ import SwiftUI
 struct Category: Identifiable, Hashable {
     var id = UUID()
     var name: String
-    var color: Color
+    var color: String
     var icon: String
     var amount: Double
 }
