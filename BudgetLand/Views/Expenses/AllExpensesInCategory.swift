@@ -37,7 +37,13 @@ struct AllExpensesInCategory: View {
     var body: some View {
         
         VStack (alignment: .leading) {
-//            
+//            List (expensesArray) { expense in
+//                Text(expense.description)
+//            }
+            
+            //            Text(budgetCategory.amount as NSNumber, formatter: NumberFormatter.currency)
+            //                .frame(maxWidth: .infinity, alignment: .leading)
+            //            Spacer()
             Form {
                 TextField("Title", text: $title)
                 TextField("Amount", text: $amount)

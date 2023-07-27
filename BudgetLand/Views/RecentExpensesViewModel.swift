@@ -7,16 +7,16 @@
 
 import Foundation
 
-//@MainActor final class RecentExpensesViewModel: ObservableObject {
-//   @Published var allExpenses: [Expenses] = []
-//    private let persistenceConstroller = PersistenceController.shared
-//
-//    init() {
-//        fetchAllExpenses()
-//    }
-//
-//    func fetchAllExpenses() {
+@MainActor final class RecentExpensesViewModel: ObservableObject {
+   @Published var allExpenses: [Expenses] = []
+    private let persistenceConstroller = CoreDataManager.shared
+
+    init() {
+        fetchAllExpenses()
+    }
+
+    func fetchAllExpenses() {
 //        allExpenses = persistenceConstroller.fetchExpenses()
 //        print(allExpenses)
-//    }
-//}
+    }
+}
