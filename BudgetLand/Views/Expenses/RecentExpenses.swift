@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RecentExpenses: View {
-//    @StateObject var viewModel = RecentExpensesViewModel()
+    @EnvironmentObject var viewModel: MainViewModel
     
     var body: some View {
         VStack {
@@ -18,26 +18,14 @@ struct RecentExpenses: View {
                     .shadow(radius: 0.3)
                 Spacer()
                 
-                NavigationView {
-//                    Button("See All") {
-//            
-//                    }
-//                    .background(Color(Constants.customPink))
-//                .cornerRadius(45)
-                }
             } //hstack
             .padding()
             .frame(height: 25)
-//            ForEach(viewModel.allExpenses, id: \.id) { expense in
-//                ExpenseRow(description: expense.expenseDescription ?? "", expenseType: expense.type, expenseDate: expense.expenseDate ?? Date(), amount: expense.expenseAmount)
-//            }
-            
-//            ForEach(Array(expenseListVM.expenses.prefix(5).enumerated()), id: \.element) { index,
-//                expense in
-//                ExpenseRow(expense: expense)
-//                Divider()
-//                    .opacity(index == 4 ? 0 : 1)
-//            }
+           
+            ForEach(viewModel.expensesShortlist,id: \.id) { expense in
+                ExpenseRow(description: expense.expenseTitle ?? "", expenseType: expense.expenseType, expenseDate: expense.expenseDate ?? Date(), amount: expense.expenseAmount)
+            }
+
         } //vstack
         .padding()
         .background(Color(Constants.customBlue))

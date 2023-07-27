@@ -11,7 +11,6 @@
 		461648692A4AF31400B24D88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461648682A4AF31400B24D88 /* Assets.xcassets */; };
 		4616486C2A4AF31400B24D88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4616486B2A4AF31400B24D88 /* Preview Assets.xcassets */; };
 		4616486E2A4AF31400B24D88 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4616486D2A4AF31400B24D88 /* PersistenceController.swift */; };
-		461648712A4AF31400B24D88 /* BudgetLand.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4616486F2A4AF31400B24D88 /* BudgetLand.xcdatamodeld */; };
 		461648782A4AF3C700B24D88 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461648772A4AF3C700B24D88 /* WelcomeView.swift */; };
 		4616487A2A4B16CA00B24D88 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461648792A4B16CA00B24D88 /* Constants.swift */; };
 		4616487E2A4B18E300B24D88 /* EnterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4616487D2A4B18E300B24D88 /* EnterButton.swift */; };
@@ -29,6 +28,7 @@
 		4616489C2A4C756600B24D88 /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4616489B2A4C756600B24D88 /* CategoryData.swift */; };
 		4616489E2A4C7FB800B24D88 /* CategoryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4616489D2A4C7FB800B24D88 /* CategoryDetailsView.swift */; };
 		461648A02A4C882000B24D88 /* HeaderForMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4616489F2A4C882000B24D88 /* HeaderForMainView.swift */; };
+		4622E81D2A72D6470024816A /* BudgetLand.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4622E81B2A72D6470024816A /* BudgetLand.xcdatamodeld */; };
 		4688388F2A6AEA3400B0C75F /* AllExpensesInCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688388E2A6AEA3400B0C75F /* AllExpensesInCategory.swift */; };
 		46CE06D92A681751005AE75B /* AddCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE06D82A681751005AE75B /* AddCategoryView.swift */; };
 		46CE06DB2A696114005AE75B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE06DA2A696114005AE75B /* CoreDataManager.swift */; };
@@ -64,7 +64,6 @@
 		461648682A4AF31400B24D88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4616486B2A4AF31400B24D88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4616486D2A4AF31400B24D88 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
-		461648702A4AF31400B24D88 /* BudgetLand.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BudgetLand.xcdatamodel; sourceTree = "<group>"; };
 		461648772A4AF3C700B24D88 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		461648792A4B16CA00B24D88 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4616487D2A4B18E300B24D88 /* EnterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterButton.swift; sourceTree = "<group>"; };
@@ -83,6 +82,7 @@
 		4616489B2A4C756600B24D88 /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
 		4616489D2A4C7FB800B24D88 /* CategoryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailsView.swift; sourceTree = "<group>"; };
 		4616489F2A4C882000B24D88 /* HeaderForMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderForMainView.swift; sourceTree = "<group>"; };
+		4622E81C2A72D6470024816A /* BudgetLand.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BudgetLand.xcdatamodel; sourceTree = "<group>"; };
 		4688388E2A6AEA3400B0C75F /* AllExpensesInCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllExpensesInCategory.swift; sourceTree = "<group>"; };
 		46CE06D82A681751005AE75B /* AddCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryView.swift; sourceTree = "<group>"; };
 		46CE06DA2A696114005AE75B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -266,7 +266,7 @@
 		46DA86022A5C694F003E2F13 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
-				4616486F2A4AF31400B24D88 /* BudgetLand.xcdatamodeld */,
+				4622E81B2A72D6470024816A /* BudgetLand.xcdatamodeld */,
 				4616486D2A4AF31400B24D88 /* PersistenceController.swift */,
 				46DA86032A5C697A003E2F13 /* Persistence+Expense.swift */,
 				46DA86052A5C6C40003E2F13 /* Expenses+CoreDataClass.swift */,
@@ -426,8 +426,8 @@
 				46DA86192A5F598D003E2F13 /* SettingsView.swift in Sources */,
 				4616486E2A4AF31400B24D88 /* PersistenceController.swift in Sources */,
 				461648842A4B7AE400B24D88 /* CategoriesCardView.swift in Sources */,
-				461648712A4AF31400B24D88 /* BudgetLand.xcdatamodeld in Sources */,
 				4688388F2A6AEA3400B0C75F /* AllExpensesInCategory.swift in Sources */,
+				4622E81D2A72D6470024816A /* BudgetLand.xcdatamodeld in Sources */,
 				4616489E2A4C7FB800B24D88 /* CategoryDetailsView.swift in Sources */,
 				46DA86262A65D4D8003E2F13 /* CurrencyModel.swift in Sources */,
 				46CE06D92A681751005AE75B /* AddCategoryView.swift in Sources */,
@@ -660,13 +660,14 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		4616486F2A4AF31400B24D88 /* BudgetLand.xcdatamodeld */ = {
+		4622E81B2A72D6470024816A /* BudgetLand.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				461648702A4AF31400B24D88 /* BudgetLand.xcdatamodel */,
+				4622E81C2A72D6470024816A /* BudgetLand.xcdatamodel */,
 			);
-			currentVersion = 461648702A4AF31400B24D88 /* BudgetLand.xcdatamodel */;
-			path = BudgetLand.xcdatamodeld;
+			currentVersion = 4622E81C2A72D6470024816A /* BudgetLand.xcdatamodel */;
+			name = BudgetLand.xcdatamodeld;
+			path = ../Views/Categories/BudgetLand.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

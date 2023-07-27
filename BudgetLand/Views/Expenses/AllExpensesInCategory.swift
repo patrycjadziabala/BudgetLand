@@ -23,15 +23,15 @@ struct AllExpensesInCategory: View {
         expense.expenseTitle = title
         expense.expenseAmount = Double(amount)!
         
-        budgetCategory.addToExpenses(expense)
+//        budgetCategory.addToExpenses(expense)
         try? viewContext.save()
     }
    
     private var expensesArray: [Expenses] {
-        guard let expenses = budgetCategory.expenses else {
+//        guard let expenses = budgetCategory.expenses else {
             return []
-        }
-       return expenses.allObjects as! [Expenses]
+//        }
+//       return expenses.allObjects as! [Expenses]
     }
     
     var body: some View {

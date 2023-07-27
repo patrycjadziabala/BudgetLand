@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @State private var addExpensePresented: Bool = false
-//    @StateObject var viewModel = MainViewModel()
+    @StateObject var viewModel = MainViewModel()
     
     var body: some View {
         NavigationView {
@@ -34,11 +34,11 @@ struct MainView: View {
                             .padding()
                     } // button
                     .sheet(isPresented: $addExpensePresented) {
-//                        AddExpenseView(budgetCategory: [])
+                        AddExpenseView()
                     }
                 })
                 .background(Color(Constants.customBlue))
-//            .environmentObject(viewModel)
+            .environmentObject(viewModel)
             .navigationTitle(Constants.dashboard)
         } // navigantionView
     }
