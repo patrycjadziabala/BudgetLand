@@ -32,5 +32,12 @@ final class MainViewModel: ObservableObject {
         expensesShortlist = Array(expensesShortlist.suffix(5))
     }
     
+    func addDefaultCategoriesToDatabase() {
+        for category in customCategories {
+            let cat = BudgetCategory(context: persistanceController.viewContext)
+            cat.id
+        }
+    }
+    
     // fetching methods and data manipulation
 }

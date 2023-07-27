@@ -30,6 +30,7 @@
 		461648A02A4C882000B24D88 /* HeaderForMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4616489F2A4C882000B24D88 /* HeaderForMainView.swift */; };
 		4622E81D2A72D6470024816A /* BudgetLand.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4622E81B2A72D6470024816A /* BudgetLand.xcdatamodeld */; };
 		4622E81F2A72DE2D0024816A /* AllExpensesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4622E81E2A72DE2D0024816A /* AllExpensesViewModel.swift */; };
+		4622E8212A72E75A0024816A /* Persistence+BudgetCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4622E8202A72E75A0024816A /* Persistence+BudgetCategory.swift */; };
 		4688388F2A6AEA3400B0C75F /* AllExpensesInCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688388E2A6AEA3400B0C75F /* AllExpensesInCategory.swift */; };
 		46CE06D92A681751005AE75B /* AddCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE06D82A681751005AE75B /* AddCategoryView.swift */; };
 		46CE06DB2A696114005AE75B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE06DA2A696114005AE75B /* CoreDataManager.swift */; };
@@ -85,6 +86,8 @@
 		4616489F2A4C882000B24D88 /* HeaderForMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderForMainView.swift; sourceTree = "<group>"; };
 		4622E81C2A72D6470024816A /* BudgetLand.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BudgetLand.xcdatamodel; sourceTree = "<group>"; };
 		4622E81E2A72DE2D0024816A /* AllExpensesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllExpensesViewModel.swift; sourceTree = "<group>"; };
+		4622E8202A72E75A0024816A /* Persistence+BudgetCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Persistence+BudgetCategory.swift"; sourceTree = "<group>"; };
+		4622E8222A72EA3C0024816A /* BudgetLand 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BudgetLand 2.xcdatamodel"; sourceTree = "<group>"; };
 		4688388E2A6AEA3400B0C75F /* AllExpensesInCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllExpensesInCategory.swift; sourceTree = "<group>"; };
 		46CE06D82A681751005AE75B /* AddCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryView.swift; sourceTree = "<group>"; };
 		46CE06DA2A696114005AE75B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -271,6 +274,7 @@
 				4622E81B2A72D6470024816A /* BudgetLand.xcdatamodeld */,
 				4616486D2A4AF31400B24D88 /* PersistenceController.swift */,
 				46DA86032A5C697A003E2F13 /* Persistence+Expense.swift */,
+				4622E8202A72E75A0024816A /* Persistence+BudgetCategory.swift */,
 				46DA86052A5C6C40003E2F13 /* Expenses+CoreDataClass.swift */,
 				46DA86062A5C6C40003E2F13 /* Expenses+CoreDataProperties.swift */,
 				46CE06DC2A69614F005AE75B /* Core Data - tutorial */,
@@ -432,6 +436,7 @@
 				461648842A4B7AE400B24D88 /* CategoriesCardView.swift in Sources */,
 				4688388F2A6AEA3400B0C75F /* AllExpensesInCategory.swift in Sources */,
 				4622E81D2A72D6470024816A /* BudgetLand.xcdatamodeld in Sources */,
+				4622E8212A72E75A0024816A /* Persistence+BudgetCategory.swift in Sources */,
 				4616489E2A4C7FB800B24D88 /* CategoryDetailsView.swift in Sources */,
 				46DA86262A65D4D8003E2F13 /* CurrencyModel.swift in Sources */,
 				46CE06D92A681751005AE75B /* AddCategoryView.swift in Sources */,
@@ -667,9 +672,10 @@
 		4622E81B2A72D6470024816A /* BudgetLand.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				4622E8222A72EA3C0024816A /* BudgetLand 2.xcdatamodel */,
 				4622E81C2A72D6470024816A /* BudgetLand.xcdatamodel */,
 			);
-			currentVersion = 4622E81C2A72D6470024816A /* BudgetLand.xcdatamodel */;
+			currentVersion = 4622E8222A72EA3C0024816A /* BudgetLand 2.xcdatamodel */;
 			name = BudgetLand.xcdatamodeld;
 			path = ../Views/Categories/BudgetLand.xcdatamodeld;
 			sourceTree = "<group>";
