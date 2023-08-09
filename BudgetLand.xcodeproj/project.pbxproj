@@ -31,6 +31,7 @@
 		4622E81D2A72D6470024816A /* BudgetLand.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4622E81B2A72D6470024816A /* BudgetLand.xcdatamodeld */; };
 		4622E81F2A72DE2D0024816A /* AllExpensesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4622E81E2A72DE2D0024816A /* AllExpensesViewModel.swift */; };
 		4622E8212A72E75A0024816A /* Persistence+BudgetCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4622E8202A72E75A0024816A /* Persistence+BudgetCategory.swift */; };
+		4622E8242A793FE10024816A /* CustomCategoriesBudget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4622E8232A793FE10024816A /* CustomCategoriesBudget.swift */; };
 		4688388F2A6AEA3400B0C75F /* AllExpensesInCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688388E2A6AEA3400B0C75F /* AllExpensesInCategory.swift */; };
 		46CE06D92A681751005AE75B /* AddCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE06D82A681751005AE75B /* AddCategoryView.swift */; };
 		46CE06DB2A696114005AE75B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE06DA2A696114005AE75B /* CoreDataManager.swift */; };
@@ -88,6 +89,7 @@
 		4622E81E2A72DE2D0024816A /* AllExpensesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllExpensesViewModel.swift; sourceTree = "<group>"; };
 		4622E8202A72E75A0024816A /* Persistence+BudgetCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Persistence+BudgetCategory.swift"; sourceTree = "<group>"; };
 		4622E8222A72EA3C0024816A /* BudgetLand 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BudgetLand 2.xcdatamodel"; sourceTree = "<group>"; };
+		4622E8232A793FE10024816A /* CustomCategoriesBudget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCategoriesBudget.swift; sourceTree = "<group>"; };
 		4688388E2A6AEA3400B0C75F /* AllExpensesInCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllExpensesInCategory.swift; sourceTree = "<group>"; };
 		46CE06D82A681751005AE75B /* AddCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryView.swift; sourceTree = "<group>"; };
 		46CE06DA2A696114005AE75B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				461648832A4B7AE400B24D88 /* CategoriesCardView.swift */,
 				4616489D2A4C7FB800B24D88 /* CategoryDetailsView.swift */,
 				461648852A4C65D700B24D88 /* CategoryTitleView.swift */,
+				4622E8232A793FE10024816A /* CustomCategoriesBudget.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				46CE06D92A681751005AE75B /* AddCategoryView.swift in Sources */,
 				46DA86082A5C6C40003E2F13 /* Expenses+CoreDataProperties.swift in Sources */,
 				461648992A4C742C00B24D88 /* CategoryModel.swift in Sources */,
+				4622E8242A793FE10024816A /* CustomCategoriesBudget.swift in Sources */,
 				461648652A4AF31300B24D88 /* BudgetLandApp.swift in Sources */,
 				4616487E2A4B18E300B24D88 /* EnterButton.swift in Sources */,
 				4616487A2A4B16CA00B24D88 /* Constants.swift in Sources */,

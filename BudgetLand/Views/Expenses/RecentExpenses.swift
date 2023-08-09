@@ -25,7 +25,6 @@ struct RecentExpenses: View {
             ForEach(viewModel.expensesShortlist,id: \.id) { expense in
                 ExpenseRow(description: expense.expenseTitle ?? "", expenseType: expense.expenseType, expenseDate: expense.expenseDate ?? Date(), amount: expense.expenseAmount)
             }
-
         } //vstack
         .padding()
         .background(Color(Constants.customBlue))

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HeaderForMainView: View {
     @State private var addMoney: Bool = false
+    @State private var setBudget: Bool = false
     
     var body: some View {
         ZStack {
@@ -40,19 +41,38 @@ struct HeaderForMainView: View {
                 } // hstack
                 .offset(y: -12)
                 Spacer()
-                Button {
-                    addMoney.toggle()
-                } label: {
-                    Text("Add Money")
-                        .font(.custom(Constants.fontExtraBold, size: 20))
-                        .background(
-                        Capsule()
-                            .strokeBorder(lineWidth: 3)
-                            .shadow(radius: 6)
-                            .padding([.top, .bottom, .leading, .trailing], -7)
-                        )
-                } //button
-                .offset(x: 130, y: -20)
+                HStack {
+                    Spacer()
+                    Button {
+                        setBudget.toggle()
+                    } label: {
+                        Text("Set Budgets")
+                            .font(.custom(Constants.fontExtraBold, size: 20))
+                            .background(
+                            Capsule()
+                                .strokeBorder(lineWidth: 3)
+                                .shadow(radius: 6)
+                                .padding([.top, .bottom, .leading, .trailing], -7)
+                            )
+                    } // button
+                    .padding()
+                    .sheet(isPresented: $setBudget) {
+                        CustomCategoriesBudget()
+                    }
+//                    Button {
+//                        addMoney.toggle()
+//                    } label: {
+//                        Text("Add Money")
+//                            .font(.custom(Constants.fontExtraBold, size: 20))
+//                            .background(
+//                            Capsule()
+//                                .strokeBorder(lineWidth: 3)
+//                                .shadow(radius: 6)
+//                                .padding([.top, .bottom, .leading, .trailing], -7)
+//                            )
+//                    } //button
+//                    .padding()
+                } // hstack
             } // vstack
         } //zstack
         .frame(height: 350)
